@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+.cover {
+height:768px;
+width: 100%;
+display: grid;
+z-index: 1;
+order: 2;
+overflow: hidden;
+align-content: center;
+}
+
+    .headerContact {
+        display: grid;
+        width: 100%;
+        padding: 20px 0px;
+        align-content: center;
+        justify-content: center;
+    }
+
+        .headerContact h1 {
+            justify-self: center;
+            font-size: 48px;
+            color: #D1ADB0;
+            font-weight: bold;
+            text-shadow: 3px 3px 0 #0F0F15;
+        }
+
+        .headerContact h3 {
+            justify-self: center;
+            color: #fff;
+            font-size: 24px;
+            width: 100%;
+            font-weight: lighter;
+        }
+
+        .bodyContact {
+        padding: 20px 0px;
+        display: grid;
+        align-items: center;
+        justify-items: center;       
+        }
+
+        .formContact {
+            height: 90%;
+            width: 90%;
+            display: grid;
+            align-content: center;
+        }
+
+        .form-control {
+                color: #fff;
+                background: #171721;
+                box-shadow: 4px 4px 0 #0F0F15;
+                height: 70px;
+                width: 100%;
+                border: none;
+                margin-bottom: 20px;
+                padding: 0px 20px;
+                outline: none;
+                transition: all 0.4s;
+            }
+
+            .form-control:hover {
+                background: #13131c;
+            }
+
+            .form-control::placeholder {
+                color: #fff;
+            }
+
+            .form-control:focus {
+                transform: scale(1.01);
+                background: #13131c;
+            }
+
+            .form-message {
+                color: #fff;
+                background: #171721;
+                box-shadow: 4px 4px 0 #0F0F15;
+                height: 200px;
+                width: 100%;
+                border: none;
+                margin-bottom: 10px;
+                padding:20px 20px;
+                outline: none;
+                transition: all 0.4s;
+                resize: none;
+            }
+
+            .form-message:hover {
+                background: #13131c;
+            }
+
+            .form-message::placeholder {
+                color: #fff;
+            }
+
+            .form-message:focus {
+                transform: scale(1.01);
+                background: #13131c;
+            }
+
+            .formContact button {
+                cursor: pointer;
+                color: #fff;
+                background: #ac4f55;
+                box-shadow: 4px 4px 0 #0F0F15;
+                height: 50px;
+                width: 100px;
+                float: right;
+                outline: none;
+                border: none;
+                transition: all 0.4s;
+            }
+
+            .formContact button:hover {
+                background: #933f42;
+                transform: scale(1.05);
+            }

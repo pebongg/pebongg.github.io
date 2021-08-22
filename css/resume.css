@@ -1,0 +1,672 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+.cover {
+height:768px;
+width: 100%;
+display: grid;
+z-index: 1;
+order: 2;
+overflow: hidden;
+align-content: center;  
+}
+
+    .cover h1 {
+        color: #D1ADB0;
+        font-size: 48px;
+        font-weight: bold;
+        text-shadow: 3px 3px 0 #0F0F15;
+    }
+
+    .cover a {
+        display: grid;
+        color: #fff;
+        background: #ac4f55;
+        box-shadow: 3px 3px 0 #0F0F15;
+        height: 26px;
+        width: 133px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-decoration: none;
+        cursor: pointer;
+        align-items: center;
+        justify-self: center;
+        transition: all 0.4s;
+    }
+
+    .cover a:hover {
+        background: #933f42;
+        transform: scale(1.05);
+    }
+
+    .cover p {
+        color: #fff;
+        font-size: 25px;
+        font-weight: lighter;
+        padding: 20px 0px;
+        width: 85%;
+        margin: auto;
+    }
+
+section {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+    .profile {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        margin: 20px 0px;
+    }
+
+        .profileHead {
+            display: flex;
+            width: 75%;
+            background: #171721;
+            justify-content: flex-end;
+            justify-self: flex-start;
+            align-items: center;
+            padding: 0px 20px;
+            margin: 20px 0px;
+            box-shadow: 4px 4px 0 #0F0F15;
+            transition: all 0.4s;
+        }
+
+        .profileHead:hover {
+            background: #13131c;
+        }
+
+        .profileHead h2 {
+            font-size: 40px;
+            color: #D1ADB0;
+            font-weight: bold;
+            text-shadow: 3px 3px 0 #0F0F15;
+        }
+
+        .profileBody {
+            display: flex;
+            width: 75%;
+            background: #171721;
+            padding: 20px 20px;
+            margin: 20px 0px;
+            box-shadow: 4px 4px 0 #0F0F15;
+            justify-content: flex-end;
+            justify-self: flex-start;
+            transition: all 0.4s;
+        }
+
+        .profileBody:hover {
+            background: #13131c;
+        }
+
+            .profileBodyLeft {
+                display: grid;
+                width: 50%;
+                justify-content: end;
+                text-align: right;
+            }
+
+            .profileBodyRight {
+                display: grid;
+                width: 50%;
+                justify-content: end;
+                text-align: right;
+            }
+
+            .profileBodyLeft b, .profileBodyRight b {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .profileBodyLeft p, .profileBodyRight p {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+    .skills {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        margin: 20px 0px;
+    }
+
+        .skillsHead {
+            display: flex;
+            width: 75%;
+            background: #171721;
+            justify-content: flex-start;
+            justify-self: flex-end;
+            align-items: center;
+            padding: 0px 20px;
+            margin: 20px 0px;
+            box-shadow: 4px 4px 0 #0F0F15;
+            transition: all 0.4s;
+        }
+
+        .skillsHead:hover {
+            background: #13131c;
+        }
+
+        .skillsHead h2 {
+            font-size: 40px;
+            color: #D1ADB0;
+            font-weight: bold;
+            text-shadow: 3px 3px 0 #0F0F15;
+        }
+
+        .skillsBody {
+            display: flex;
+            width: 75%;
+            background: #171721;
+            padding: 20px 20px;
+            margin: 20px 0px;
+            box-shadow: 4px 4px 0 #0F0F15;
+            justify-content: flex-start;
+            justify-self: flex-end;
+            transition: all 0.4s;
+        }
+
+        .skillsBody:hover {
+            background: #13131c;
+        }
+
+            .skillsBodyLeft {
+                display: grid;
+                width: 50%;
+                justify-content: start;
+                text-align: left;
+                align-content: start;
+            }
+
+            .skillsBodyRight {
+                display: grid;
+                width: 50%;
+                justify-content: start;
+                text-align: left;
+                align-content: start;
+            }
+
+            .skillsBodyLeft b, .skillsBodyRight b {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 10px 0px;
+            }
+
+    .tools {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        margin: 20px 0px;
+    }
+
+        .toolsHead {
+            display: flex;
+            width: 75%;
+            background: #171721;
+            justify-content: flex-end;
+            justify-self: flex-start;
+            align-items: center;
+            padding: 0px 20px;
+            margin: 20px 0px;
+            box-shadow: 4px 4px 0 #0F0F15;
+            transition: all 0.4s;
+        }
+        
+        .toolsHead:hover {
+            background: #13131c;
+        }
+
+        .toolsHead h2 {
+            font-size: 40px;
+            color: #D1ADB0;
+            font-weight: bold;
+            text-shadow: 3px 3px 0 #0F0F15;
+        }
+
+        .toolsBody {
+            display: flex;
+            width: 75%;
+            background: #171721;
+            padding: 20px 20px;
+            margin: 20px 0px;
+            box-shadow: 4px 4px 0 #0F0F15;
+            justify-content: flex-end;
+            justify-self: flex-start;
+            transition: all 0.4s;
+        }
+
+        .toolsBody:hover {
+            background: #13131c;
+        }
+
+            .toolsBodyLeft {
+                display: grid;
+                width: 50%;
+                justify-content: end;
+                text-align: right;
+                align-content: start;
+            }
+
+            .toolsBodyRight {
+                display: grid;
+                width: 50%;
+                justify-content: end;
+                text-align: right;
+                align-content: start;
+            }
+
+            .toolsBodyLeft b, .toolsBodyRight b {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 10px 0px;
+            }
+
+    .interest {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        margin: 20px 0px;
+    }
+
+        .interestHead {
+            display: flex;
+            width: 75%;
+            background: #171721;
+            justify-content: flex-start;
+            justify-self: flex-end;
+            align-items: center;
+            padding: 0px 20px;
+            margin: 20px 0px;
+            box-shadow: 4px 4px 0 #0F0F15;
+            transition: all 0.4s;
+        }
+
+        .interestHead:hover {
+            background: #13131c;
+        }
+
+        .interestHead h2 {
+            font-size: 40px;
+            color: #D1ADB0;
+            font-weight: bold;
+            text-shadow: 3px 3px 0 #0F0F15;
+        }
+
+        .interestBody {
+            display: flex;
+            width: 75%;
+            background: #171721;
+            padding: 20px 20px;
+            margin: 20px 0px;
+            box-shadow: 4px 4px 0 #0F0F15;
+            justify-content: flex-start;
+            justify-self: flex-end;
+            transition: all 0.4s;
+        }
+
+        .interestBody:hover {
+            background: #13131c;
+        }
+
+            .interestBodyLeft {
+                display: grid;
+                width: 50%;
+                justify-content: start;
+                text-align: left;
+                align-content: start;
+            }
+
+            .interestBodyRight {
+                display: grid;
+                width: 50%;
+                justify-content: start;
+                text-align: left;
+                align-content: start;
+            }
+
+            .interestBodyLeft b, .interestBodyRight b {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 10px 0px;
+            }
+            
+    .education {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        margin: 20px 0px;
+    }
+    
+        .educationHead {
+            display: flex;
+            width: 100%;
+            background: #171721;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 20px;
+            margin: 20px 0px;
+            box-shadow: 4px 4px 0 #0F0F15;
+            transition: all 0.4s;
+        }
+
+        .educationHead:hover {
+            background: #13131c;
+        }
+
+        .educationHead h2 {
+            font-size: 40px;
+            color: #D1ADB0;
+            font-weight: bold;
+            text-shadow: 3px 3px 0 #0F0F15;
+        }
+
+        .educationBody {
+            display: grid;
+            width: 100%;
+            background: #171721;
+            box-shadow: 4px 4px 0 #0F0F15;
+            margin: 20px 0px;
+            padding: 20px;
+            transition: all 0.4s;
+        }
+
+        .educationBody:hover {
+            background: #13131c;
+        }
+
+        .educationBody img {
+            height: 130px;
+            justify-self: center;
+            transition: all 0.4s;
+        }
+
+        .educationBody img:hover {
+            transform: scale(1.05);
+        }
+
+        .educationBody h1 {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .educationBody h2 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .educationBody h3 {
+            color: #454559;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .educationBody p {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+    .experience {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        margin: 20px 0px;
+    }
+    
+        .experienceHead {
+            display: flex;
+            width: 100%;
+            background: #171721;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 20px;
+            margin: 20px 0px;
+            box-shadow: 4px 4px 0 #0F0F15;
+            transition: all 0.4s;
+        }
+
+        .experienceHead:hover {
+            background: #13131c;
+        }
+
+        .experienceHead h2 {
+            font-size: 40px;
+            color: #D1ADB0;
+            font-weight: bold;
+            text-shadow: 3px 3px 0 #0F0F15;
+        }
+
+        .expeienceBody {
+            display: grid;
+            width: 100%;
+            align-content: start;
+            margin: 20px 0px;
+            padding: 20px;
+            transition: all 0.4s;            
+        }
+
+            .timeline-items{
+                width: 100%;
+                margin:auto;
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+            }
+            .timeline-items::before{
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                background-color: #0F0F15;
+                left: calc(50% - 1px);
+            }
+            .timeline-item{
+                margin-bottom: 40px;
+                width: 100%;
+                position: relative;
+            }
+            .timeline-item:last-child{
+                margin-bottom: 0;
+            }
+            .timeline-item:nth-child(odd){
+                padding-right: calc(50% + 30px);
+                text-align: right;
+            }
+            .timeline-item:nth-child(even){
+                padding-left: calc(50% + 30px);
+            }
+            .timeline-dot{
+                height: 16px;
+                width: 16px;
+                background-color: #ac4f55;
+                position: absolute;
+                left: calc(50% - 8px);
+                border-radius: 50%;
+                top:10px;
+            }
+            .timeline-date{
+                font-size: 18px;
+                color: #fff;
+                margin:6px 0 15px;
+            }
+            .righttext{
+                text-align: start;
+            }
+            
+            .marginleft {
+                margin-left: 30px;
+            }
+
+            .marginright {
+                margin-right: 30px;
+            }
+
+            .timeline-content{
+                background-color: #171721;
+                padding: 30px;
+                box-shadow: 6px 6px 0 #0F0F15;
+                transition: all 0.4s;
+            }
+
+            .timeline-content:hover {
+                background-color: #13131c;
+            }
+
+            .timeline-content.shadowright {
+                box-shadow: -6px 6px 0 #0F0F15;
+            }
+
+            .timeline-content h3{
+                font-size: 20px;
+                color: #ac4f55;
+                margin:0 0 10px;
+                font-weight: bold;
+            }
+            .timeline-content h4{
+                font-size: 18px;
+                color: #454559;
+                margin: -15px 0 10px;
+                font-weight: bold;
+            }
+            .timeline-content p {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 22px;
+                text-align: justify;
+            }
+            
+            .timeline-content ul {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 22px;
+                text-align: justify;
+                padding-left: 22px;
+            }
+
+    .afterSection {
+        content: '';
+        display: grid;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        margin: 20px 0px;
+    }
+
+    @media (max-width: 780px) {
+
+        .cover h1 {
+            font-size: 40px;
+        }
+
+        .cover p {
+            width: 90%;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .cover a {
+            width: 100px;
+        }
+
+        .profileHead, .profileBody, .skillsHead, .skillsBody, .toolsHead, .toolsBody, .interestHead, .interestBody {
+            width: 100%;
+        }
+
+        .profileBodyLeft b, .profileBodyRight b {
+            font-size: 16px;
+        }
+
+        .profileBodyLeft p, .profileBodyRight p {
+            font-size: 12px;
+        }
+        
+        .skillsBodyLeft b, .skillsBodyRight b, .toolsBodyLeft b, .toolsBodyRight b, .interestBodyLeft b, .interestBodyRight b {
+            font-size: 12px;
+        }
+
+        .educationBody h1 {
+            font-size: 18px;
+        }
+
+        .educationBody h2 {
+            font-size: 16px;
+        }
+
+        .educationBody h3 {
+            font-size: 14px;
+        }
+
+        .educationBody p {
+            font-size: 12px;
+            text-align: justify;
+        }
+
+        /* FOR EXPERIENCE */
+            .timeline-content {
+                width: 96%;
+            }
+
+            .timeline-content.shadowright {
+                    box-shadow: 6px 6px 0 #0F0F15;
+            }
+
+            .marginleft {
+                margin-left: 0;
+            }
+
+            .marginright {
+                margin-right: 0;
+            }
+
+            .timeline-items::before{
+                left: 7px;
+            }
+            .timeline-item:nth-child(odd){
+                padding-right: 0;
+                text-align: left;
+            }
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even){
+                padding-left: 37px;
+            }
+            .timeline-dot{
+                left:0;
+            }
+
+            .timeline-date {
+                font-size: 14px;
+            }
+
+            .timeline-content h3 {
+                font-size: 16px;
+            }
+
+            .timeline-content h4 {
+                font-size: 14px;
+            }
+
+            .timeline-content p, .timeline-content ul {
+                font-size: 12px;
+            }
+        }
