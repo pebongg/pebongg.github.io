@@ -1,0 +1,118 @@
+.cover {
+height:100%;
+width: 100%;
+display: grid;
+z-index: 1;
+order: 2;
+overflow: hidden;
+align-content: space-between;
+}
+
+    .headerAbout {
+        display: grid;
+        width: 100%;
+        padding: 20px 0px;
+        align-content: center;
+        justify-content: center;
+    }
+
+        .headerAbout h1 {
+            justify-self: center;
+            font-size: 48px;
+            color: #D1ADB0;
+            font-weight: bold;
+            text-shadow: 3px 3px 0 #0F0F15;
+        }
+
+        .headerAbout h3 {
+            justify-self: center;
+            color: #fff;
+            font-size: 24px;
+            width: 100%;
+            font-weight: lighter;
+        }
+
+    .bodyAbout {
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-self: center;
+        justify-content: center;
+        flex-wrap: wrap;       
+    }
+
+        .bodyAbout .boxAbout {
+            display: grid;
+            padding: 30px;
+            transition: all 0.4s;
+            margin: 0px 10px;
+        }
+
+        .bodyAbout .boxAbout:hover {
+            filter: brightness(90%);
+        }
+
+        .boxAbout a i {
+            font-size: 175px;
+            text-shadow: 4px 4px 0 #0F0F15;
+            transition: all 0.4s;
+        }
+
+        .boxAbout a i:hover {
+            transform: scale(1.05);
+        }
+
+        .boxAbout p {
+            font-size: 24px;
+        }
+
+        .colorOrange {
+            color: #E34C26;
+        }
+
+        .colorPurple {
+            color: #563D7C;
+        }
+
+        .colorYellow {
+            color: #F1E05A;
+        }
+
+    .footerAbout {
+        display: grid;
+        padding: 20px 0px;
+    }
+
+        .footerAboutText {
+            width: 75%;
+            margin: 0px auto;
+        }
+
+        .footerAboutText p {
+            color: #fff;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        .footerAboutGithub {
+            display: flex;
+            justify-items: center;
+            justify-self: center;
+            cursor: pointer;
+        }
+
+
+        .footerAboutGithub a {
+            padding: 25px 0px;
+            color: #fff;
+            font-size:24px;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        .footerAboutGithub a i {
+            color: #fff;
+            font-size:24px;
+        }
+        
