@@ -45,6 +45,7 @@ body{
         left: 50%;
         transform: translate(-50%, 50%);
         color: #D1ADB0;
+        text-shadow: 3px 3px 0 #0F0F15;
     }
 
     .logo-header b {
@@ -138,6 +139,119 @@ body{
             color: #ac4f55;
         }
 
+    .stickyHeader {
+        width: 100%;
+        height: 70px;
+        top: -75px;
+        position: fixed;
+        background: #171721;
+        box-shadow: 1px 1px 3px #0F0F15;
+        display: grid;
+        z-index: 13;
+        transition: all 0.1s;
+    }
+
+        .stickyHeader .headerItems {
+            width: 1280px;
+            height: 100%;
+            padding: 0px 10px;
+            display: flex;
+            justify-content: space-between;
+            justify-self: center;
+            align-items: center;
+        }
+
+        .headerItems p {
+            font-size: 34px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #D1ADB0;
+            margin-top: -10px;
+            text-shadow: 3px 3px 0 #0F0F15;
+        }
+
+        .headerItems p b {
+            color: #ac4f55;
+            font-size: 46px;            
+        }
+
+        .headerItems ul a {
+            color: #D1ADB0;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            text-shadow: 3px 3px 0 #0F0F15;
+            padding: 7px 15px;
+            transition: all 0.4s;            
+        }
+
+        .headerItems ul a:hover,
+        .headerItems ul a.active {
+        font-size: 18px;
+        color: #ac4f55;
+        text-shadow: 3px 3px 0 #0F0F15;
+        }
+
+    .stickyToggle {
+        width: 100%;
+        height: 70px;
+        top: -75px;
+        position: fixed;
+        background: #171721;
+        box-shadow: 1px 1px 3px #0F0F15;
+        display: none;
+        transition: all 0.1s;
+        z-index: 13;        
+    }
+
+        .stickyToggle .toggleItems {
+            width: 1280px;
+            height: 100%;
+            padding: 0px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            justify-self: center;
+            align-items: center;
+        }
+
+        .toggleItems p {
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #D1ADB0;
+            margin-top: -5px;
+            text-shadow: 3px 3px 0 #0F0F15;
+        }
+
+        .toggleItems p b {
+            color: #ac4f55;
+            font-size: 46px;            
+        }
+
+        .toggleItems .menuToggle {
+            cursor: pointer;
+            display: flex;         
+            margin-top: 10px;
+        }
+
+        .toggleItems .menuToggle img {
+            height: 15px;
+            filter: drop-shadow(2px 2px 0 #0f0f15);
+            transition: all 0.4s;
+            padding: 0px 5px;
+        }
+
+        .toggleItems .menuToggle img:hover {
+            filter: saturate(200%);
+        }
+
+    @media (max-width: 1279px){
+        .stickyHeader .headerItems, .stickyToggle .toggleItems {
+            width: 100vw;
+        }
+    }
+
     #stickySocials {
         display: grid;
         position: fixed;
@@ -147,14 +261,10 @@ body{
         width: 50px;
         left: -50vw;
         bottom: 33%;
-        box-shadow: 4px 4px 0 #0F0F15;
+        box-shadow: 3px 3px 0 #0F0F15;
         justify-items: center;
         z-index: 13;
         transition: all 0.7s;
-    }
-
-    #stickySocials:hover {
-        background: #1f1f2b;
     }
 
     #stickySocials a i {
@@ -197,6 +307,15 @@ body{
     background: #171721;
     width: 100%;
     height: max-content;
+    box-shadow: 1px 1px 3px #0F0F15;
+    }
+
+    .backgroundView2 {
+    /*background: radial-gradient(ellipse at bottom, #01acc1 0%,#62e5de 100%);*/
+    background: #171721;
+    width: 100%;
+    height: max-content;
+    box-shadow: -1px -1px 3px #0F0F15;
     }
 
         .box {
@@ -287,6 +406,7 @@ body{
             }
             }
 
+            
         .container {
         max-width: 1280px;
         margin: 0px auto;
@@ -452,6 +572,18 @@ body{
 
 /*MEDIA SCREEN*/
 @media (max-width: 860px) {
+
+    .stickyHeader {
+        display: none;
+    }
+
+    .stickyToggle {
+        display: grid;
+    }
+
+    .stickyToggle .toggleItems {
+        margin-top: -5px;
+    }
 
     header {
         flex-wrap: wrap;
