@@ -28,11 +28,21 @@ window.addEventListener("DOMContentLoaded", () => {
     })
 })
 
+let myHeader = document.getElementById('stickyHeader');
+let myToggle = document.getElementById('stickyToggle');
 var myButton = document.getElementById("back-to-top-btn");
 let mySocials = document.getElementById('stickySocials');
 
 window.addEventListener('scroll', function () {
     let value = window.scrollY;
+
+    if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
+        myHeader.style.top = "0";
+        myToggle.style.top = "0";
+    } else {
+        myHeader.style.top = "-75px";
+        myToggle.style.top = "-75px";
+    }
 
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         mySocials.style.opacity = "1";
