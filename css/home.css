@@ -392,6 +392,7 @@ section {
     .coverRight img {
         margin-top: -60px;
         transform: translateX(5vw);
+        
     }
 
 }
