@@ -1,0 +1,22 @@
+.cover {
+height:660px;
+width: 100%;
+display: grid;
+z-index: 1;
+order: 2;
+overflow: hidden;
+align-content: center;
+}
+
+.cover h1 {
+    color: #D1ADB0;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 4px 4px 0 #0F0F15;
+    transition: all 0.4s;
+}
+
+.cover h1:hover {
+    color: #ac4f55;
+}
+
