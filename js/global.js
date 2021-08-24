@@ -72,3 +72,7 @@ function closeNav() {
 
     document.getElementById("fullPageMenu").style.right = "-100vw";
 }
+
+function autoClose() {
+    setTimeout(function () { window.close() }, 10000);
+}
