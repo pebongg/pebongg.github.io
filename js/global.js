@@ -76,3 +76,10 @@ function closeNav() {
 function autoClose() {
     setTimeout(function () { window.close() }, 10000);
 }
+
+function submitForm() {
+    var frm = document.getElementById('formMessage');
+    frm.submit();
+    frm.reset();
+    return false;
+}
