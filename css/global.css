@@ -7,7 +7,7 @@
 }
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   background: rgb(0,0,0, 0.2);
@@ -21,14 +21,19 @@
 
 @font-face {
     font-family: "comando";
-    src: url("commando.ttf");
+    src: url("../font/commando.ttf");
+}
+
+@font-face {
+    font-family: "billionDreams";
+    src: url("../font/BillionDreams_PERSONAL.ttf");
 }
 
 body{
     background: #1f1f2b;
 }
 
-.intro {
+/* .intro {
         position: fixed;
         left: 0;
         top: 0;
@@ -75,6 +80,41 @@ body{
         bottom: 150px;
         opacity: 0;
         transition: ease-in-out 0.5s;
+    } */
+
+    .intro {
+        position: fixed;
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        background-color: #171721;
+        transition: 1s;
+        z-index: 10000;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo-header span img {
+        height: 100px;
+    }
+
+    .logo{
+        position: relative;
+        display: inline-block;
+        bottom: -15px;
+        opacity: 0;
+    }
+
+    .logo.active{
+        bottom: 0;
+        opacity: 1;
+        transition: ease-in-out 0.3s;
+    }
+
+    .logo.fade {
+        bottom: 25px;
+        opacity: 0;
+        transition: ease-in-out 0.4s;
     }
 
     .fullPageMenu {
@@ -142,13 +182,14 @@ body{
     .stickyHeader {
         width: 100%;
         height: 70px;
-        top: -75px;
+        top: 0;
         position: fixed;
         background: #171721;
         box-shadow: 1px 1px 3px #0F0F15;
         display: grid;
         z-index: 13;
-        transition: all 0.1s;
+        transition: all 0.4s;
+        overflow: hidden;
     }
 
         .stickyHeader .headerItems {
@@ -161,18 +202,21 @@ body{
             align-items: center;
         }
 
-        .headerItems p {
-            font-size: 34px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #D1ADB0;
-            margin-top: -10px;
-            text-shadow: 3px 3px 0 #0F0F15;
+        .headerItems img {
+            height: 50px;
+        }
+        
+        .headerItems .menuToggle img {
+            display: none;
+            height: 20px;
+            padding: 0px 10px;            
+            filter: drop-shadow(3px 3px 0 #0f0f15);
+            cursor: pointer;
+            transition: all 0.4s;            
         }
 
-        .headerItems p b {
-            color: #ac4f55;
-            font-size: 46px;            
+        .headerItems .menuToggle img:hover {
+            filter: saturate(200%);
         }
 
         .headerItems ul a {
@@ -192,62 +236,8 @@ body{
         text-shadow: 3px 3px 0 #0F0F15;
         }
 
-    .stickyToggle {
-        width: 100%;
-        height: 70px;
-        top: -75px;
-        position: fixed;
-        background: #171721;
-        box-shadow: 1px 1px 3px #0F0F15;
-        display: none;
-        transition: all 0.1s;
-        z-index: 13;        
-    }
-
-        .stickyToggle .toggleItems {
-            width: 1280px;
-            height: 100%;
-            padding: 0px 10px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            justify-self: center;
-            align-items: center;
-        }
-
-        .toggleItems p {
-            font-size: 25px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #D1ADB0;
-            margin-top: -5px;
-            text-shadow: 3px 3px 0 #0F0F15;
-        }
-
-        .toggleItems p b {
-            color: #ac4f55;
-            font-size: 46px;            
-        }
-
-        .toggleItems .menuToggle {
-            cursor: pointer;
-            display: flex;         
-            margin-top: 10px;
-        }
-
-        .toggleItems .menuToggle img {
-            height: 15px;
-            filter: drop-shadow(2px 2px 0 #0f0f15);
-            transition: all 0.4s;
-            padding: 0px 5px;
-        }
-
-        .toggleItems .menuToggle img:hover {
-            filter: saturate(200%);
-        }
-
     @media (max-width: 1279px){
-        .stickyHeader .headerItems, .stickyToggle .toggleItems {
+        .stickyHeader .headerItems {
             width: 100vw;
         }
     }
@@ -316,6 +306,8 @@ body{
     width: 100%;
     height: max-content;
     box-shadow: -1px -1px 3px #0F0F15;
+    position: absolute;
+    z-index: 9;
     }
 
         .box {
@@ -419,60 +411,9 @@ body{
         }
 
             header {
-            max-height: 72px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 2;
-            order: 1;
+                height: 70px;
+                content: '';
             }
-
-                header .dwikrnputra {
-                font-size: 34px;
-                font-weight: bold;
-                text-decoration: none;
-                color: #D1ADB0;
-                margin-top: -10px;
-                text-shadow: 3px 3px 0 #0F0F15;
-                }
-
-                    .dwikrnputra b {
-                    color: #ac4f55;
-                    font-size: 46px;
-                    }
-
-                header .menuIcon {
-                    cursor: pointer;
-                    display: none;
-                    margin-top: 10px;
-                }
-
-                header .menuIcon img {
-                    height: 15px;
-                    filter: drop-shadow(3px 3px 0 #0F0F15);
-                    transition: all 0.4s;
-                }
-
-                header .menuIcon img:hover {
-                    filter: saturate(200%);
-                }
-
-                header ul a {
-                color: #D1ADB0;
-                font-size: 16px;
-                font-weight: 600;
-                text-decoration: none;
-                padding: 7px 15px;
-                transition: all 0.4s; 
-                }
-
-                header ul a:hover,
-                header ul a.active {
-                font-size: 18px;
-                color: #ac4f55;
-                text-shadow: 3px 3px 0 #0F0F15;
-                }
 
             footer {
             height: 340px;
@@ -491,17 +432,9 @@ body{
             align-content: center;
             }
 
-            .dwikrnputra2 {
-                font-size: 24px;
-                font-weight: bold;
-                color: #D1ADB0;
-                margin-bottom: -10px;
-            }
-
-            .dwikrnputra2 b {
-                font-size: 36px;
-                font-weight: bold;
-                color: #ac4f55;
+            .footerTop img {
+                height: 45px;
+                margin: -5px auto;
             }
 
             .address, .number, .email {
@@ -573,33 +506,12 @@ body{
 /*MEDIA SCREEN*/
 @media (max-width: 860px) {
 
-    .stickyHeader {
+    .stickyHeader ul {
         display: none;
     }
 
-    .stickyToggle {
-        display: grid;
-    }
-
-    .stickyToggle .toggleItems {
-        margin-top: -5px;
-    }
-
-    header {
-        flex-wrap: wrap;
-    }
-
-    header .dwikrnputra {
-        font-size: 25px;
-    }
-
-    header ul a {
-        display: none;
-    }
-
-    header .menuIcon {
-        display: flex;
-        order: 3;
+    .stickyHeader .menuToggle img {
+        display: block;
     }
 
     #stickySocials {

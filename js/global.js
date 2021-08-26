@@ -19,32 +19,31 @@ window.addEventListener("DOMContentLoaded", () => {
                     span.classList.add('fade');
                 }, (idx + 1) * 50)
             })
-        }, 2000);
+        }, 1300 );
 
         setTimeout(() => {
             intro.style.top = '-100vh';
-        }, 2300)
+        }, 1800)
 
     })
 })
 
+var prevScrollpos = window.pageYOffset;
 let myHeader = document.getElementById('stickyHeader');
 let myToggle = document.getElementById('stickyToggle');
 var myButton = document.getElementById("back-to-top-btn");
 let mySocials = document.getElementById('stickySocials');
 
-window.addEventListener('scroll', function () {
-    let value = window.scrollY;
-
-    if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
         myHeader.style.top = "0";
-        myToggle.style.top = "0";
     } else {
         myHeader.style.top = "-75px";
-        myToggle.style.top = "-75px";
     }
+    prevScrollpos = currentScrollPos;
 
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (prevScrollpos > 200) {
         mySocials.style.opacity = "1";
         mySocials.style.left = "0";
         myButton.style.opacity = "1";
@@ -55,8 +54,7 @@ window.addEventListener('scroll', function () {
         myButton.style.opacity = "0";
         myButton.style.right = "-50vw";
     }
-
-})
+}
 
 function topFunction() {
     document.body.scrollTop = 0;
@@ -74,7 +72,7 @@ function closeNav() {
 }
 
 function autoClose() {
-    setTimeout(function () { window.close() }, 10000);
+    setTimeout(function () { window.close() }, 8000);
 }
 
 function submitForm() {

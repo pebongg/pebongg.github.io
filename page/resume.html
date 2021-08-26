@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     
     <!-- Primary Meta Tags -->
-    <title>DwiKurniaPutra. | Personal Pages</title>
+    <title>DwiKurniaPutra | Personal Pages</title>
     <meta name="title" content="DwiKurniaPutra. | Personal Pages">
     <meta name="description"
         content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
@@ -40,13 +40,13 @@
 </head>
 <body>
 
-    <div class="intro">
+    <!-- <div class="intro">
         <h1 class="logo-header">
             <span class="logo">Dwi<span class="logo">Kurnia<span class="logo">
                         <p>Putra<b>.</b></p>
                     </span>
         </h1>
-    </div>
+    </div> -->
 
     <div class="fullPageMenu" id="fullPageMenu">
         <a href="javascript:void(0)" class="closeToggle" onclick="closeNav()"><i class="fas fa-times"></i></a>
@@ -60,24 +60,18 @@
         </div>
     </div>
 
-    <div class="stickyHeader" id="stickyHeader">
+    <div class="stickyHeader animate__animated animate__fadeInDown animate__delay-0s" id="stickyHeader">
         <div class="headerItems">
-            <p>DwiKurniaPutra<b>.</b></p>
+            <img src="../img/dwikrnputra2.png">
+            <a onclick="openNav()" id="menuToggle" class="menuToggle"><img src="../img/toggle.png"></a>
             <ul>
-                <a href="../index.html">Home</a>
+                <a href="../index.html" >Home</a>
                 <a href="#" class="active">Resume</a>
                 <a href="#">Portfolio</a>
                 <a href="#">Blog</a>
                 <a href="../page/about.html">About</a>
                 <a href="../page/contact.html">Contact Us</a>
             </ul>
-        </div>
-    </div>
-
-    <div class="stickyToggle" id="stickyToggle">
-        <div class="toggleItems">
-            <p>DwiKurniaPutra<b>.</b></p>
-            <a onclick="openNav()" id="menuToggle" class="menuToggle"><img src="../img/toggle.png"></a>
         </div>
     </div>
 
@@ -111,26 +105,11 @@
             <div></div>
         </div>
         <div class="container">
-            <header class="animate__animated animate__slideInDown animate__delay-3s">
-                <a href="#" class="dwikrnputra">
-                    <p>DwiKurniaPutra<b>.</b></p>
-                </a>
-
-                <a onclick="openNav()" id="toggle" class="menuIcon"><img src="../img/toggle.png"></a>
-                
-                <ul>
-                    <a href="../index.html">Home</a>
-                    <a href="#" class="active">Resume</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Blog</a>
-                    <a href="../page/about.html">About</a>
-                    <a href="../page/contact.html">Contact Us</a>
-                </ul>
-            </header>
+            <header></header>
             <div class="cover">
-                <h1 class="wow fadeInDown" data-wow-delay="3s">Resume</h1>
-                <a class="wow fadeInLeft" data-wow-delay="3s" href="../doc/CV_DWIKURNIAPUTRA.pdf">Download CV</a>
-                <p class="wow fadeInRight" data-wow-delay="3s">Educational background as a Bachelor of Computer (S.Kom) has more knowledge in
+                <h1 class="wow fadeInDown">Resume</h1>
+                <a class="wow fadeInLeft" href="../doc/CV_DWIKURNIAPUTRA.pdf">Download CV</a>
+                <p class="wow fadeInRight">Educational background as a Bachelor of Computer (S.Kom) has more knowledge in
                 the field of computer science and has experience as a Programmer who focuses on
                 Production Machine Data Servers and also has experience as IT Support in the
                 Production Division of companies engaged in the food and beverage industry. From
@@ -320,9 +299,8 @@
         <div class="container">
             <footer class="wow fadeIn">
                 <div class="footerTop">
-                    <div class="dwikrnputra2 animate__animated animate__pulse animate__infinite animate__slow">
-                        DwiKurniaPutra<b>.</b>
-                    </div>
+                    <img class="animate__animated animate__headShake animate__infinite animate__slow"
+                        src="../img/dwikrnputra2.png">
                     <div class="address">
                         Curup, Bengkulu 39125
                     </div>

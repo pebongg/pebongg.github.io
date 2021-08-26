@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     
     <!-- Primary Meta Tags -->
-    <title>DwiKurniaPutra. | Personal Pages</title>
+    <title>DwiKurniaPutra | Personal Pages</title>
     <meta name="title" content="DwiKurniaPutra. | Personal Pages">
     <meta name="description"
         content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
@@ -40,13 +40,13 @@
 </head>
 <body>
 
-    <div class="intro">
+    <!-- <div class="intro">
         <h1 class="logo-header">
             <span class="logo">Dwi<span class="logo">Kurnia<span class="logo">
                         <p>Putra<b>.</b></p>
                     </span>
         </h1>
-    </div>
+    </div> -->
 
     <div class="fullPageMenu" id="fullPageMenu">
         <a href="javascript:void(0)" class="closeToggle" onclick="closeNav()"><i class="fas fa-times"></i></a>
@@ -60,9 +60,10 @@
         </div>
     </div>
 
-    <div class="stickyHeader" id="stickyHeader">
+    <div class="stickyHeader animate__animated animate__fadeInDown animate__delay-0s" id="stickyHeader">
         <div class="headerItems">
-            <p>DwiKurniaPutra<b>.</b></p>
+            <img src="../img/dwikrnputra2.png">
+            <a onclick="openNav()" id="menuToggle" class="menuToggle"><img src="../img/toggle.png"></a>
             <ul>
                 <a href="../index.html">Home</a>
                 <a href="../page/resume.html" >Resume</a>
@@ -74,12 +75,6 @@
         </div>
     </div>
     
-    <div class="stickyToggle" id="stickyToggle">
-        <div class="toggleItems">
-            <p>DwiKurniaPutra<b>.</b></p>
-            <a onclick="openNav()" id="menuToggle" class="menuToggle"><img src="../img/toggle.png"></a>
-        </div>
-    </div>
 
     <div id="stickySocials">
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dwikrnputra/"><i
@@ -110,43 +105,28 @@
             <div></div>
         </div>
         <div class="container">
-            <header class="animate__animated animate__slideInDown animate__delay-3s">
-                <a href="#" class="dwikrnputra">
-                    <p>DwiKurniaPutra<b>.</b></p>
-                </a>
-
-                <a onclick="openNav()" id="toggle" class="menuIcon"><img src="../img/toggle.png"></a>
-                
-                <ul>
-                    <a href="../index.html">Home</a>
-                    <a href="../page/resume.html" >Resume</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Blog</a>
-                    <a href="../page/about.html">About</a>
-                    <a href="#" class="active">Contact Us</a>
-                </ul>
-            </header>
+            <header></header>
             <div class="cover">
-                <div class="headerContact wow fadeIn" data-wow-delay="3s">
+                <div class="headerContact wow fadeIn">
                     <h1>Contact Us</h1>
                     <h3>Get in touch</h3>
                 </div>
                 <div class="bodyContact">
                     <div class="formContact">
                         <form id="formMessage" target="_blank" action="https://formsubmit.co/dwikrnputra22@gmail.com" method="POST">
-                            <div class="wow fadeInLeft" data-wow-delay="3s">
+                            <div class="wow fadeInLeft">
                                 <input type="hidden" name="_subject" value="New Email">
                                 <input type="text" name="name" class="form-control" placeholder="Full Name" required>
                             </div>
-                            <div class="wow fadeInRight" data-wow-delay="3s">
+                            <div class="wow fadeInRight">
                                 <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                             </div>
-                            <div class="wow fadeInLeft" data-wow-delay="3s">
+                            <div class="wow fadeInLeft">
                                 <input type="hidden" name="_next" value="https://pebongg.github.io/page/thanks.html">
                                 <textarea placeholder="Message" class="form-message" name="message" rows="10" required></textarea>
                                 <input type="hidden" name="_captcha" value="false">
                             </div>
-                            <div class="wow fadeInRight" data-wow-delay="3s">
+                            <div class="wow fadeInRight">
                                 <button onclick="submitForm()" type="submit" class="btncontactus">Send</button>
                             </div>
                         </form>
@@ -155,53 +135,52 @@
             </div>
         </div>
 
-        <div class="backgroundView2">
-            <div class="container">
-                <footer class="wow fadeIn">
-                    <div class="footerTop">
-                        <div class="dwikrnputra2 animate__animated animate__pulse animate__infinite animate__slow">
-                            DwiKurniaPutra<b>.</b>
-                        </div>
-                        <div class="address">
-                            Curup, Bengkulu 39125
-                        </div>
-                        <div class="number">
-                            +6282269012819
-                        </div>
-                        <div class="email">
-                            dwikrnputra22@gmail.com
-                        </div>
+    <div class="backgroundView2">
+        <div class="container">
+            <footer class="wow fadeIn">
+                <div class="footerTop">
+                    <img class="animate__animated animate__headShake animate__infinite animate__slow"
+                        src="../img/dwikrnputra2.png">
+                    <div class="address">
+                        Curup, Bengkulu 39125
                     </div>
-                    <div class="footerMid">
-                        <ul class="menuF">
-                            <a href="../index.html">Home</a>
-                            <a href="../page/resume.html">Resume</a>
-                            <a href="#">Portfolio</a>
-                            <a href="#">Blog</a>
-                            <a href="../page/about.html">About</a>
-                            <a href="../page/contact.html">Contact Us</a>
-                        </ul>
-                        <ul class="socials2">
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dwikrnputra/"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/dwikrnputra/"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pebongg"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/pebongg"><i
-                                    class="fab fa-github"></i></a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://pebongg.wordpress.com/"><i
-                                    class="fab fa-wordpress-simple"></i></a>
-                        </ul>
+                    <div class="number">
+                        +6282269012819
                     </div>
-                    <div class="footerBottom">
-                        <div class="copyright">
-                            <b>&copy; 2021</b> Powered by <b>Github Pages</b> Designed by <b>Dwi Kurnia Putra</b>
-                        </div>
+                    <div class="email">
+                        dwikrnputra22@gmail.com
                     </div>
-                </footer>
-            </div>
+                </div>
+                <div class="footerMid">
+                    <ul class="menuF">
+                        <a href="../index.html">Home</a>
+                        <a href="../page/resume.html">Resume</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Blog</a>
+                        <a href="../page/about.html">About</a>
+                        <a href="../page/contact.html">Contact Us</a>
+                    </ul>
+                    <ul class="socials2">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dwikrnputra/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/dwikrnputra/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pebongg"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/pebongg"><i
+                                class="fab fa-github"></i></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://pebongg.wordpress.com/"><i
+                                class="fab fa-wordpress-simple"></i></a>
+                    </ul>
+                </div>
+                <div class="footerBottom">
+                    <div class="copyright">
+                        <b>&copy; 2021</b> Powered by <b>Github Pages</b> Designed by <b>Dwi Kurnia Putra</b>
+                    </div>
+                </div>
+            </footer>
         </div>
+    </div>
 
     <script src="../js/global.js"></script>
     <script src="../js/wow.min.js"></script>

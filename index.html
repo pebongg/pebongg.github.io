@@ -7,22 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     
     <!-- Primary Meta Tags -->
-    <title>DwiKurniaPutra. | Personal Pages</title>
+    <title>DwiKurniaPutra | Personal Pages</title>
     <meta name="title" content="DwiKurniaPutra. | Personal Pages">
-    <meta name="description" content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
-
+    <meta name="description"
+        content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pebongg.github.io/">
     <meta property="og:title" content="DwiKurniaPutra. | Personal Pages">
-    <meta property="og:description" content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
+    <meta property="og:description"
+        content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
     <meta property="og:image" content="https://pebongg.github.io/img/dwikurniaputra1200x628.jpg">
-
+    
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://pebongg.github.io/">
     <meta property="twitter:title" content="DwiKurniaPutra. | Personal Pages">
-    <meta property="twitter:description" content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
+    <meta property="twitter:description"
+        content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
     <meta property="twitter:image" content="https://pebongg.github.io/img/dwikurniaputra1200x628.jpg">
     
     <link rel="stylesheet" href="css/animate.css">
@@ -32,6 +35,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/35529807d7.js" crossorigin="anonymous"></script>
@@ -40,11 +44,11 @@
 <body>
 
     <div class="intro">
-        <h1 class="logo-header">
-            <span class="logo">Dwi<span class="logo">Kurnia<span class="logo">
-                        <p>Putra<b>.</b></p>
-                    </span>
-        </h1>
+        <div class="logo-header">
+            <span class="logo">
+                <img src="img/dwikrnputra.png">
+            </span>
+        </div>
     </div>
 
     <div class="fullPageMenu" id="fullPageMenu">
@@ -59,9 +63,10 @@
         </div>
     </div>
 
-    <div class="stickyHeader" id="stickyHeader">
+    <div class="stickyHeader animate__animated animate__fadeInDown animate__delay-3s" id="stickyHeader">
         <div class="headerItems">
-            <p>DwiKurniaPutra<b>.</b></p>
+            <img src="img/dwikrnputra2.png">
+            <a onclick="openNav()" id="menuToggle" class="menuToggle"><img src="img/toggle.png"></a>
             <ul>
                 <a href="#" class="active">Home</a>
                 <a href="page/resume.html">Resume</a>
@@ -70,13 +75,6 @@
                 <a href="page/about.html">About</a>
                 <a href="page/contact.html">Contact Us</a>
             </ul>
-        </div>
-    </div>
-
-    <div class="stickyToggle" id="stickyToggle">
-        <div class="toggleItems">
-            <p>DwiKurniaPutra<b>.</b></p>
-            <a onclick="openNav()" id="menuToggle" class="menuToggle"><img src="img/toggle.png"></a>
         </div>
     </div>
 
@@ -110,23 +108,7 @@
             <div></div>
         </div>
         <div class="container">
-            <header class="animate__animated animate__slideInDown animate__delay-3s">
-                <a href="#" class="dwikrnputra">
-                    <p>DwiKurniaPutra<b>.</b></p>
-                </a>
-                
-                <a onclick="openNav()" id="toggle" class="menuIcon"><img src="img/toggle.png"></a>
-
-                <ul>
-                    <a href="#" class="active">Home</a>
-                    <a href="page/resume.html">Resume</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Blog</a>
-                    <a href="page/about.html">About</a>
-                    <a href="page/contact.html">Contact Us</a>
-                </ul>
-            </header>
-        
+            <header></header>      
             <div class="cover">
                 <div class="coverLeft wow fadeInLeft" data-wow-delay="2s">
                     <div id="text1" >Hi, Iam Dwi Kurnia Putra</div>
@@ -243,9 +225,7 @@
         <div class="container">
         <footer class="wow fadeIn">
             <div class="footerTop">
-                <div class="dwikrnputra2 animate__animated animate__pulse animate__infinite animate__slow">
-                    DwiKurniaPutra<b>.</b>
-                </div>
+                <img class="animate__animated animate__headShake animate__infinite animate__slow" src="img/dwikrnputra2.png" >
                 <div class="address">
                     Curup, Bengkulu 39125
                 </div>
