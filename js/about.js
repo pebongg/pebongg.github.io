@@ -9,14 +9,25 @@ HTTP.onreadystatechange = function () {
             return num
                 .toFixed(1)
         }
-        
+
         let totalCode = data.HTML + data.CSS + data.JavaScript;
         let html = data.HTML / totalCode * 100;
         let css = data.CSS / totalCode * 100;
         let javaScript = data.JavaScript / totalCode * 100;
         
+        
         document.getElementById("apiHTML").innerHTML = "HTML : " + formatNumber(html) + " %";
         document.getElementById("apiCSS").innerHTML = "CSS : " + formatNumber(css) + " %";
         document.getElementById("apiJavaScript").innerHTML = "Javascript : " + formatNumber(javaScript) + " %";
+
+        document.getElementById("htmlBar").style.width = html + "%";
+        document.getElementById("htmlBar").innerHTML = data.HTML;
+        document.getElementById("cssBar").style.width = css + "%";
+        document.getElementById("cssBar").innerHTML = data.CSS;
+        document.getElementById("jsBar").style.width = javaScript + "%";
+        document.getElementById("jsBar").innerHTML = data.JavaScript;
+        
+            
+
     }
 }
