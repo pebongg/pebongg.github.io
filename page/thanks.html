@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="../img/logopebongg.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=1, user-scalable=no">
     
     <!-- Primary Meta Tags -->
     <title>DwiKurniaPutra | Personal Pages</title>
-    <meta name="title" content="DwiKurniaPutra. | Personal Pages">
+    <meta name="title" content="DwiKurniaPutra | Personal Pages">
     <meta name="description"
         content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pebongg.github.io/">
-    <meta property="og:title" content="DwiKurniaPutra. | Personal Pages">
+    <meta property="og:title" content="DwiKurniaPutra | Personal Pages">
     <meta property="og:description"
         content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
     <meta property="og:image" content="https://pebongg.github.io/img/dwikurniaputra1200x628.jpg">
@@ -26,79 +26,54 @@
     <meta property="twitter:title" content="DwiKurniaPutra. | Personal Pages">
     <meta property="twitter:description"
         content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
-    <meta property="twitter:image" content="https://pebongg.github.io/img/dwikurniaputra1200x628.jpg">
+    <meta property="twitter:image" content="https://pebongg.github.io/img/dwikurniaputra1200x628.png">
     
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/thanks.css">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/35529807d7.js" crossorigin="anonymous"></script>
 </head>
 <body onload="autoClose()">
 
-    <div class="fullPageMenu" id="fullPageMenu">
-        <a href="javascript:void(0)" class="closeToggle" onclick="closeNav()"><i class="fas fa-times"></i></a>
-        <div class="toggleMenu">
-            <a href="../index.html"><i class="fas fa-home"></i>&nbsp&nbspHOME</a>
-            <a href="../page/resume.html"><i class="fas fa-user-alt"></i>&nbsp&nbspRESUME</a>
-            <a href="#"><i class="fas fa-code"></i>&nbsp&nbspPORTFOLIO</a>
-            <a href="#"><i class="fas fa-file"></i>&nbsp&nbspBLOG</a>
-            <a href="../page/about.html"><i class="fas fa-info-circle"></i>&nbsp&nbspABOUT</a>
-            <a href="../page/contact.html"><i class="fas fa-envelope-open"></i>&nbsp&nbspCONTACT US</a>
-        </div>
+    <div class="navContent" id="navContent">
+        <a class="closeNav" id="closeNav"><i class="fas fa-times"></i></a>
+        <ul>
+            <a href="../index.html">Home</a>
+            <a href="../page/resume.html">Resume</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="../page/about.html">About</a>
+            <a href="../page/contact.html">Contact</a>
+        </ul>
+        <hr>
     </div>
     
-    <div class="stickyHeader animate__animated animate__fadeInDown animate__delay-0s" id="stickyHeader">
+    <div id="overlayNav"></div>
+    
+    <div class="stickyHeader animate__animated animate__fadeInDown" id="stickyHeader">
         <div class="headerItems">
-            <img src="../img/dwikrnputra2.png">
-            <a onclick="openNav()" id="menuToggle" class="menuToggle"><img src="../img/toggle.png"></a>
-            <ul>
-                <a href="../index.html">Home</a>
-                <a href="../page/resume.html">Resume</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Blog</a>
-                <a href="../page/about.html">About</a>
-                <a href="../page/contact.html">Contact Us</a>
-            </ul>
+            <br>
+            <img>
+            <a class="sideNav" id="sideNav"><i class="fas fa-bars"></i></a>
         </div>
     </div>
     
-    <div id="stickySocials">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dwikrnputra/"><i
-                class="fab fa-linkedin-in"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/dwikrnputra/"><i
-                class="fab fa-instagram"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pebongg"><i
-                class="fab fa-facebook-f"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/pebongg"><i class="fab fa-github"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://pebongg.wordpress.com/"><i
-                class="fab fa-wordpress-simple"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UCIT-1wO_UTj5wRtGVnZA7Sg"><i
-                class="fab fa-youtube"></i></a>
-    </div>
-
     <button onclick="topFunction()" id="back-to-top-btn" title="Back to Top"><i class="fas fa-angle-double-up"></i></button>
-
-    <div class="box">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div class="container wow fadeInDown" data-wow-delay="0">
+    
+    <div class="container wow fadeInDown">
         <header></header>
-        <div class="cover animate__animated animate__shakeY animate__infinite animate__slow">
-            <h1>THANKS FOR SUBMIT MESSAGE</h1>
+        <div class="cover">
+            <div class="coverLeft wow fadeInDown">
+                <div id="text1">Your message has been sent</div>
+                <div id="text2">Thank you for getting in touch and warm regards</div>
+            </div>
+            <div class="coverRight wow fadeIn">
+                <img id="putra2">
+            </div>
         </div>
     </div>
 
@@ -106,8 +81,7 @@
         <div class="container">
             <footer class="wow fadeIn">
                 <div class="footerTop">
-                    <img class="animate__animated animate__headShake animate__infinite animate__slow"
-                        src="../img/dwikrnputra2.png">
+                    <img class="animate__animated animate__headShake animate__infinite animate__slow">
                     <div class="address">
                         Curup, Bengkulu 39125
                     </div>
@@ -118,6 +92,7 @@
                         dwikrnputra22@gmail.com
                     </div>
                 </div>
+                <hr>
                 <div class="footerMid">
                     <ul class="menuF">
                         <a href="../index.html">Home</a>
