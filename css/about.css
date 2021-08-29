@@ -77,6 +77,43 @@ align-content: space-between;
             color: #f2cb09;
         }
 
+        .percentBar {
+            display: flex;
+            width: 60%;
+            height: 10px;
+            margin: 0px auto;
+        }
+
+            #htmlBar {
+                height: 100%;
+                background: #E34C26;
+                font-size: 45%;
+                color: #f2f2ff;
+                font-weight: 400;
+            }
+
+            #cssBar {
+                height: 100%;
+                background: #563D7C;
+                font-size: 45%;
+                color: #f2f2ff;
+                font-weight: 400;                
+            }
+
+            #jsBar {
+                height: 100%;
+                background: #f2cb09;
+                font-size: 45%;
+                color: #1a1a1d;
+                font-weight: 400;                
+            }
+
+        @media (max-width: 480px) {
+            .percentBar {
+                width: 80%;
+            }
+        }
+
     .footerAbout {
         display: grid;
         padding: 20px 0px;
