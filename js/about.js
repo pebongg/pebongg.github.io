@@ -9,9 +9,14 @@ HTTP.onreadystatechange = function () {
             return num
                 .toFixed(1)
         }
-        let convert = 0.0010308;
-        document.getElementById("apiHTML").innerHTML = "HTML : " + formatNumber(data.HTML*convert) + " %";
-        document.getElementById("apiCSS").innerHTML = "CSS : " + formatNumber(data.CSS*convert) + " %";
-        document.getElementById("apiJavaScript").innerHTML = "Javascript : " + formatNumber(data.JavaScript*convert) + " %";
+        
+        let totalCode = data.HTML + data.CSS + data.JavaScript;
+        let html = data.HTML / totalCode * 100;
+        let css = data.CSS / totalCode * 100;
+        let javaScript = data.JavaScript / totalCode * 100;
+        
+        document.getElementById("apiHTML").innerHTML = "HTML : " + formatNumber(html) + " %";
+        document.getElementById("apiCSS").innerHTML = "CSS : " + formatNumber(css) + " %";
+        document.getElementById("apiJavaScript").innerHTML = "Javascript : " + formatNumber(javaScript) + " %";
     }
 }
