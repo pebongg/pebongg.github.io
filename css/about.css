@@ -87,7 +87,7 @@ align-content: space-between;
             #htmlBar {
                 height: 100%;
                 background: #E34C26;
-                font-size: 45%;
+                font-size: 7px;
                 color: #f2f2ff;
                 font-weight: 400;
             }
@@ -95,7 +95,7 @@ align-content: space-between;
             #cssBar {
                 height: 100%;
                 background: #563D7C;
-                font-size: 45%;
+                font-size: 7px;
                 color: #f2f2ff;
                 font-weight: 400;                
             }
@@ -103,7 +103,7 @@ align-content: space-between;
             #jsBar {
                 height: 100%;
                 background: #f2cb09;
-                font-size: 45%;
+                font-size: 7px;
                 color: #1a1a1d;
                 font-weight: 400;                
             }
