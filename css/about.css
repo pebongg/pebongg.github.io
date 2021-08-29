@@ -19,14 +19,14 @@ align-content: space-between;
         .headerAbout h1 {
             justify-self: center;
             font-size: 48px;
-            color: #D1ADB0;
+            color: #1a1a1d;
             font-weight: bold;
-            text-shadow: 3px 3px 0 #0F0F15;
+            text-shadow: 3px 3px 0 #d6d5e2;
         }
 
         .headerAbout h3 {
             justify-self: center;
-            color: #fff;
+            color: #1a1a1d;
             font-size: 24px;
             width: 100%;
             font-weight: lighter;
@@ -44,23 +44,21 @@ align-content: space-between;
 
         .bodyAbout .boxAbout {
             display: grid;
+            width: 270px;
+            background: #e3e2f2;
             padding: 30px;
             transition: all 0.4s;
-            margin: 0px 10px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 0px #d6d5e2;
         }
 
         .bodyAbout .boxAbout:hover {
-            filter: brightness(90%);
+            transform: translateY(2%);
         }
 
         .boxAbout a i {
             font-size: 175px;
-            text-shadow: 4px 4px 0 #0F0F15;
-            transition: all 0.4s;
-        }
-
-        .boxAbout a i:hover {
-            transform: scale(1.05);
         }
 
         .boxAbout p {
@@ -76,7 +74,7 @@ align-content: space-between;
         }
 
         .colorYellow {
-            color: #F1E05A;
+            color: #f2cb09;
         }
 
     .footerAbout {
@@ -90,7 +88,7 @@ align-content: space-between;
         }
 
         .footerAboutText p {
-            color: #fff;
+            color: #1a1a1d;
             font-size: 24px;
             font-weight: normal;
         }
@@ -105,14 +103,14 @@ align-content: space-between;
 
         .footerAboutGithub a {
             padding: 25px 0px;
-            color: #fff;
+            color: #1a1a1d;
             font-size:24px;
             font-weight: normal;
             text-decoration: none;
         }
 
         .footerAboutGithub a i {
-            color: #fff;
+            color: #1a1a1d;
             font-size:24px;
         }
         

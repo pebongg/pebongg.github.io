@@ -3,53 +3,6 @@
     scroll-behavior:smooth;
 }
 
-.cover {
-height:768px;
-width: 100%;
-display: grid;
-z-index: 1;
-order: 2;
-overflow: hidden;
-align-content: center;  
-}
-
-    .cover h1 {
-        color: #D1ADB0;
-        font-size: 48px;
-        font-weight: bold;
-        text-shadow: 3px 3px 0 #0F0F15;
-    }
-
-    .cover a {
-        display: grid;
-        color: #fff;
-        background: #ac4f55;
-        box-shadow: 3px 3px 0 #0F0F15;
-        height: 26px;
-        width: 133px;
-        font-size: 12px;
-        font-weight: lighter;
-        text-decoration: none;
-        cursor: pointer;
-        align-items: center;
-        justify-self: center;
-        transition: all 0.4s;
-    }
-
-    .cover a:hover {
-        background: #933f42;
-        transform: scale(1.05);
-    }
-
-    .cover p {
-        color: #fff;
-        font-size: 25px;
-        font-weight: lighter;
-        padding: 20px 0px;
-        width: 85%;
-        margin: auto;
-    }
-
 section {
     display: grid;
     width: 100%;
@@ -57,6 +10,123 @@ section {
     z-index: 1;
     overflow: hidden;
 }
+
+    .coverHead {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        padding: 20px 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+        .coverHead h1 {
+            justify-self: center;
+            font-size: 48px;
+            color: #1a1a1d;
+            font-weight: bold;
+            text-shadow: 3px 3px 0 #d6d5e2;
+        }
+
+        .coverHead h3 {
+            justify-self: center;
+            color: #1a1a1d;
+            font-size: 24px;
+            font-weight: lighter;
+        }
+
+    .coverBody {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+
+        .coverBodyLeft {
+            display: grid;           
+            width: 30%;
+            height: 100%;
+            margin: 0px 20px;
+        }
+
+            .coverBodyLeft img {
+                content: url('../img/putra3.png');
+                width: 100%;
+                background: #e3e2f2;
+                box-shadow: 3px 3px 0 #d6d5e2;
+                border-radius: 20px;
+                padding-top: 20px;
+                transition: all 0.4s;          
+            }
+
+            .coverBodyLeft img:hover {
+                transform: translateY(2%);
+            }
+
+        .coverBodyRight {
+            display: grid;
+            align-content: start;
+            justify-items: start;
+            width: 60%;
+            height: 100%;
+            margin: 0px 20px;
+
+        }
+
+            .coverBodyRight h4 {
+                color: #1a1a1d;
+                font-size: 36px;
+                font-weight: 600;
+                text-align: left;
+            }
+
+            .coverBodyRight p {
+                color: #1a1a1d;
+                font-weight: 400;
+                font-size: 20px;
+                text-align: justify;
+                margin: 5px 0;
+                margin-bottom: 20px;
+            }
+
+            .coverBodyRight ul {
+                display: flex;
+            }
+
+            .coverBodyRight ul a {
+                width: 150px;
+                margin-right: 10px;
+                transition: all 0.4s;
+            }
+
+            .coverBodyRight ul .downloadCV {
+                background: #c3073f;
+                color: #f2f2ff;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 5px 10px;
+                border: 2px solid transparent;
+            }
+            
+            .coverBodyRight ul .downloadCV:hover {
+                background: #b20a3a;
+            }
+
+            .coverBodyRight ul .resumeLinkedin {
+                border: 2px solid #c3073f;
+                color: #c3073f;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 5px 10px;
+            }
+            
+            .coverBodyRight ul .resumeLinkedin:hover {
+                background: #f7f7ff;
+            }
 
     .profile {
         display: grid;
@@ -69,41 +139,43 @@ section {
         .profileHead {
             display: flex;
             width: 75%;
-            background: #171721;
+            background: #e3e2f2;
             justify-content: flex-end;
             justify-self: flex-start;
             align-items: center;
+            border-radius: 20px;
             padding: 0px 20px;
             margin: 20px 0px;
-            box-shadow: 4px 4px 0 #0F0F15;
+            box-shadow: 4px 4px 0 #d6d5e2;
             transition: all 0.4s;
         }
 
         .profileHead:hover {
-            background: #13131c;
+            transform: translateY(2%);
         }
 
         .profileHead h2 {
             font-size: 40px;
-            color: #D1ADB0;
+            color: #1a1a1d;
             font-weight: bold;
-            text-shadow: 3px 3px 0 #0F0F15;
+            text-shadow: 3px 3px 0 #d6d5e2;
         }
 
         .profileBody {
             display: flex;
             width: 75%;
-            background: #171721;
+            background: #e3e2f2;
+            border-radius: 20px;
             padding: 20px 20px;
             margin: 20px 0px;
-            box-shadow: 4px 4px 0 #0F0F15;
+            box-shadow: 4px 4px 0 #d6d5e2;
             justify-content: flex-end;
             justify-self: flex-start;
             transition: all 0.4s;
         }
 
         .profileBody:hover {
-            background: #13131c;
+            transform: translateY(2%);
         }
 
             .profileBodyLeft {
@@ -121,13 +193,13 @@ section {
             }
 
             .profileBodyLeft b, .profileBodyRight b {
-                color: #fff;
+                color: #1a1a1d;
                 font-size: 20px;
                 font-weight: 600;
             }
 
             .profileBodyLeft p, .profileBodyRight p {
-                color: #fff;
+                color: #1a1a1d;
                 font-size: 16px;
                 font-weight: 400;
             }
@@ -143,41 +215,43 @@ section {
         .skillsHead {
             display: flex;
             width: 75%;
-            background: #171721;
+            background: #e3e2f2;
             justify-content: flex-start;
             justify-self: flex-end;
             align-items: center;
             padding: 0px 20px;
             margin: 20px 0px;
-            box-shadow: 4px 4px 0 #0F0F15;
+            box-shadow: 4px 4px 0 #d6d5e2;
+            border-radius: 20px;
             transition: all 0.4s;
         }
 
         .skillsHead:hover {
-            background: #13131c;
+            transform: translateY(2%);
         }
 
         .skillsHead h2 {
             font-size: 40px;
-            color: #D1ADB0;
+            color: #1a1a1d;
             font-weight: bold;
-            text-shadow: 3px 3px 0 #0F0F15;
+            text-shadow: 3px 3px 0 #d6d5e2;
         }
 
         .skillsBody {
             display: flex;
             width: 75%;
-            background: #171721;
+            background: #e3e2f2;
             padding: 20px 20px;
             margin: 20px 0px;
-            box-shadow: 4px 4px 0 #0F0F15;
+            box-shadow: 4px 4px 0 #d6d5e2;
+            border-radius: 20px;
             justify-content: flex-start;
             justify-self: flex-end;
             transition: all 0.4s;
         }
 
         .skillsBody:hover {
-            background: #13131c;
+            transform: translateY(2%);
         }
 
             .skillsBodyLeft {
@@ -197,7 +271,7 @@ section {
             }
 
             .skillsBodyLeft b, .skillsBodyRight b {
-                color: #fff;
+                color: #1a1a1d;
                 font-size: 16px;
                 font-weight: 600;
                 padding: 10px 0px;
@@ -214,41 +288,43 @@ section {
         .toolsHead {
             display: flex;
             width: 75%;
-            background: #171721;
+            background: #e3e2f2;
             justify-content: flex-end;
             justify-self: flex-start;
             align-items: center;
             padding: 0px 20px;
             margin: 20px 0px;
-            box-shadow: 4px 4px 0 #0F0F15;
+            box-shadow: 4px 4px 0 #d6d5e2;
+            border-radius: 20px;
             transition: all 0.4s;
         }
         
         .toolsHead:hover {
-            background: #13131c;
+            transform: translateY(2%);
         }
 
         .toolsHead h2 {
             font-size: 40px;
-            color: #D1ADB0;
+            color: #1a1a1d;
             font-weight: bold;
-            text-shadow: 3px 3px 0 #0F0F15;
+            text-shadow: 3px 3px 0 #d6d5e2;
         }
 
         .toolsBody {
             display: flex;
             width: 75%;
-            background: #171721;
+            background: #e3e2f2;
             padding: 20px 20px;
             margin: 20px 0px;
-            box-shadow: 4px 4px 0 #0F0F15;
+            box-shadow: 4px 4px 0 #d6d5e2;
+            border-radius: 20px;
             justify-content: flex-end;
             justify-self: flex-start;
             transition: all 0.4s;
         }
 
         .toolsBody:hover {
-            background: #13131c;
+            transform: translateY(2%);
         }
 
             .toolsBodyLeft {
@@ -268,7 +344,7 @@ section {
             }
 
             .toolsBodyLeft b, .toolsBodyRight b {
-                color: #fff;
+                color: #1a1a1d;
                 font-size: 16px;
                 font-weight: 600;
                 padding: 10px 0px;
@@ -285,41 +361,43 @@ section {
         .interestHead {
             display: flex;
             width: 75%;
-            background: #171721;
+            background: #e3e2f2;
             justify-content: flex-start;
             justify-self: flex-end;
             align-items: center;
             padding: 0px 20px;
             margin: 20px 0px;
-            box-shadow: 4px 4px 0 #0F0F15;
+            box-shadow: 4px 4px 0 #d6d5e2;
+            border-radius: 20px;
             transition: all 0.4s;
         }
 
         .interestHead:hover {
-            background: #13131c;
+            transform: translateY(2%);
         }
 
         .interestHead h2 {
             font-size: 40px;
-            color: #D1ADB0;
+            color: #1a1a1d;
             font-weight: bold;
-            text-shadow: 3px 3px 0 #0F0F15;
+            text-shadow: 3px 3px 0 #d6d5e2;
         }
 
         .interestBody {
             display: flex;
             width: 75%;
-            background: #171721;
+            background: #e3e2f2;
             padding: 20px 20px;
             margin: 20px 0px;
-            box-shadow: 4px 4px 0 #0F0F15;
+            box-shadow: 4px 4px 0 #d6d5e2;
+            border-radius: 20px;
             justify-content: flex-start;
             justify-self: flex-end;
             transition: all 0.4s;
         }
 
         .interestBody:hover {
-            background: #13131c;
+            transform: translateY(2%);
         }
 
             .interestBodyLeft {
@@ -339,7 +417,7 @@ section {
             }
 
             .interestBodyLeft b, .interestBodyRight b {
-                color: #fff;
+                color: #1a1a1d;
                 font-size: 16px;
                 font-weight: 600;
                 padding: 10px 0px;
@@ -356,38 +434,40 @@ section {
         .educationHead {
             display: flex;
             width: 100%;
-            background: #171721;
+            background: #e3e2f2;
             justify-content: center;
             align-items: center;
             padding: 0px 20px;
             margin: 20px 0px;
-            box-shadow: 4px 4px 0 #0F0F15;
+            box-shadow: 4px 4px 0 #d6d5e2;
+            border-radius: 20px;
             transition: all 0.4s;
         }
 
         .educationHead:hover {
-            background: #13131c;
+            transform: translateY(2%);
         }
 
         .educationHead h2 {
             font-size: 40px;
-            color: #D1ADB0;
+            color: #1a1a1d;
             font-weight: bold;
-            text-shadow: 3px 3px 0 #0F0F15;
+            text-shadow: 3px 3px 0 #d6d5e2;
         }
 
         .educationBody {
             display: grid;
             width: 100%;
-            background: #171721;
-            box-shadow: 4px 4px 0 #0F0F15;
+            background: #e3e2f2;
+            box-shadow: 4px 4px 0 #d6d5e2;
+            border-radius: 20px;
             margin: 20px 0px;
             padding: 20px;
             transition: all 0.4s;
         }
 
         .educationBody:hover {
-            background: #13131c;
+            transform: translateY(2%);
         }
 
         .educationBody img {
@@ -401,25 +481,25 @@ section {
         }
 
         .educationBody h1 {
-            color: #fff;
+            color: #1a1a1d;
             font-size: 22px;
             font-weight: 600;
         }
 
         .educationBody h2 {
-            color: #fff;
+            color: #1a1a1d;
             font-size: 20px;
             font-weight: 600;
         }
 
         .educationBody h3 {
-            color: #454559;
+            color: #a9a9cc;
             font-size: 18px;
             font-weight: 600;
         }
 
         .educationBody p {
-            color: #fff;
+            color: #1a1a1d;
             font-size: 16px;
             font-weight: 400;
         }
@@ -435,24 +515,25 @@ section {
         .experienceHead {
             display: flex;
             width: 100%;
-            background: #171721;
+            background: #e3e2f2;
             justify-content: center;
             align-items: center;
             padding: 0px 20px;
             margin: 20px 0px;
-            box-shadow: 4px 4px 0 #0F0F15;
+            box-shadow: 4px 4px 0 #d6d5e2;
+            border-radius: 20px;
             transition: all 0.4s;
         }
 
         .experienceHead:hover {
-            background: #13131c;
+            transform: translateY(2%);
         }
 
         .experienceHead h2 {
             font-size: 40px;
-            color: #D1ADB0;
+            color: #1a1a1d;
             font-weight: bold;
-            text-shadow: 3px 3px 0 #0F0F15;
+            text-shadow: 3px 3px 0 #d6d5e2;
         }
 
         .expeienceBody {
@@ -476,7 +557,7 @@ section {
                 position: absolute;
                 width: 2px;
                 height: 100%;
-                background-color: #0F0F15;
+                background-color: #1a1a1d;
                 left: calc(50% - 1px);
             }
             .timeline-item{
@@ -497,7 +578,7 @@ section {
             .timeline-dot{
                 height: 16px;
                 width: 16px;
-                background-color: #ac4f55;
+                background-color: #c3073f;
                 position: absolute;
                 left: calc(50% - 8px);
                 border-radius: 50%;
@@ -505,7 +586,7 @@ section {
             }
             .timeline-date{
                 font-size: 18px;
-                color: #fff;
+                color: #1a1a1d;
                 margin:6px 0 15px;
             }
             .righttext{
@@ -521,34 +602,35 @@ section {
             }
 
             .timeline-content{
-                background-color: #171721;
+                background-color: #e3e2f2;
                 padding: 30px;
-                box-shadow: 6px 6px 0 #0F0F15;
+                box-shadow: 6px 6px 0 #d6d5e2;
+                border-radius: 20px;
                 transition: all 0.4s;
             }
 
             .timeline-content:hover {
-                background-color: #13131c;
+                transform: translateY(2%);
             }
 
             .timeline-content.shadowright {
-                box-shadow: -6px 6px 0 #0F0F15;
+                box-shadow: -6px 6px 0 #d6d5e2;
             }
 
             .timeline-content h3{
                 font-size: 20px;
-                color: #ac4f55;
+                color: #c3073f;
                 margin:0 0 10px;
                 font-weight: bold;
             }
             .timeline-content h4{
                 font-size: 18px;
-                color: #454559;
+                color: #a9a9cc;
                 margin: -15px 0 10px;
                 font-weight: bold;
             }
             .timeline-content p {
-                color: #fff;
+                color: #1a1a1d;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 22px;
@@ -556,13 +638,13 @@ section {
             }
             
             .timeline-content ul {
-                color: #fff;
+                color: #1a1a1d;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 22px;
                 text-align: justify;
                 padding-left: 22px;
-            }
+            } 
 
     .afterSection {
         content: '';
@@ -575,18 +657,30 @@ section {
 
     @media (max-width: 780px) {
 
-        .cover h1 {
-            font-size: 40px;
+        .coverBody {
+            display: grid;
         }
 
-        .cover p {
+        .coverBodyLeft {
+            width: 60%;
+            margin: 10px auto;
+        }
+
+        .coverBodyRight {
+            margin: 0;
+            width: 100%;
+            justify-items: center;
+        }
+
+        .coverBodyRight h4 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .coverBodyRight p {
+            text-align: center;
+            font-size: 16px;
             width: 90%;
-            font-size: 18px;
-            text-align: justify;
-        }
-
-        .cover a {
-            width: 100px;
         }
 
         .profileHead, .profileBody, .skillsHead, .skillsBody, .toolsHead, .toolsBody, .interestHead, .interestBody {
@@ -628,7 +722,7 @@ section {
             }
 
             .timeline-content.shadowright {
-                    box-shadow: 6px 6px 0 #0F0F15;
+                    box-shadow: 6px 6px 0 #d6d5e2;
             }
 
             .marginleft {

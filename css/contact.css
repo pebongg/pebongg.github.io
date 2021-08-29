@@ -4,7 +4,7 @@
 }
 
 .cover {
-height:768px;
+height:100%;
 width: 100%;
 display: grid;
 z-index: 1;
@@ -24,14 +24,14 @@ align-content: center;
         .headerContact h1 {
             justify-self: center;
             font-size: 48px;
-            color: #D1ADB0;
+            color: #1a1a1d;
             font-weight: bold;
-            text-shadow: 3px 3px 0 #0F0F15;
+            text-shadow: 3px 3px 0 #d6d5e2;
         }
 
         .headerContact h3 {
             justify-self: center;
-            color: #fff;
+            color: #1a1a1d;
             font-size: 24px;
             width: 100%;
             font-weight: lighter;
@@ -52,65 +52,58 @@ align-content: center;
         }
 
         .form-control {
-                color: #fff;
-                background: #171721;
-                box-shadow: 4px 4px 0 #0F0F15;
+                color: #1a1a1d;
+                background: #e3e2f2;
+                box-shadow: 4px 4px 0 #d6d5e2;
                 height: 70px;
                 width: 100%;
                 border: none;
                 margin-bottom: 20px;
                 padding: 0px 20px;
+                border-radius: 10px;
                 outline: none;
                 transition: all 0.4s;
             }
 
-            .form-control:hover {
-                background: #13131c;
-            }
 
             .form-control::placeholder {
-                color: #fff;
+                color: #1a1a1d;
             }
 
             .form-control:focus {
                 transform: scale(1.01);
-                background: #13131c;
             }
 
             .form-message {
-                color: #fff;
-                background: #171721;
-                box-shadow: 4px 4px 0 #0F0F15;
+                color: #1a1a1d;
+                background: #e3e2f2;
+                box-shadow: 4px 4px 0 #d6d5e2;
                 height: 200px;
                 width: 100%;
                 border: none;
                 margin-bottom: 10px;
                 padding:20px 20px;
+                border-radius: 10px;
                 outline: none;
                 transition: all 0.4s;
-                resize: none;
-            }
-
-            .form-message:hover {
-                background: #13131c;
+                resize: vertical;
             }
 
             .form-message::placeholder {
-                color: #fff;
+                color: #1a1a1d;
             }
 
             .form-message:focus {
                 transform: scale(1.01);
-                background: #13131c;
             }
 
             .formContact button {
                 cursor: pointer;
                 color: #fff;
-                background: #ac4f55;
-                box-shadow: 4px 4px 0 #0F0F15;
+                background: #c3073f;
                 height: 50px;
-                width: 100px;
+                width: 120px;
+                font-weight: 500;
                 float: right;
                 outline: none;
                 border: none;
@@ -118,6 +111,5 @@ align-content: center;
             }
 
             .formContact button:hover {
-                background: #933f42;
-                transform: scale(1.05);
+                background: #b20a3a;
             }
