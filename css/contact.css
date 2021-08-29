@@ -113,3 +113,33 @@ align-content: center;
             .formContact button:hover {
                 background: #b20a3a;
             }
+
+        .mobileContact {
+            padding: 20px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+            .mobileContact a {
+                text-decoration: none;
+                display: flex;
+                color: #1a1a1d;
+                font-size: 20px;
+                font-weight: normal;
+                padding: 10px 20px;
+                background: #e3e2f2;
+                box-shadow: 3px 3px 0 #d6d5e2;
+                border-radius: 10px;
+                margin: 0 20px;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .mobileContact a i {
+                color: #f2f2ff;
+                background: #25d366;
+                padding: 10px;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
