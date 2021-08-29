@@ -9,7 +9,7 @@ HTTP.onreadystatechange = function () {
             return num
                 .toFixed(1)
         }
-        let convert = 0.000902;
+        let convert = 0.001031;
         document.getElementById("apiHTML").innerHTML = "HTML : " + formatNumber(data.HTML*convert) + " %";
         document.getElementById("apiCSS").innerHTML = "CSS : " + formatNumber(data.CSS*convert) + " %";
         document.getElementById("apiJavaScript").innerHTML = "Javascript : " + formatNumber(data.JavaScript*convert) + " %";
