@@ -44,7 +44,7 @@ align-content: space-between;
 
         .bodyAbout .boxAbout {
             display: grid;
-            width: 270px;
+            width:270px;
             background: #e3e2f2;
             padding: 30px;
             transition: all 0.4s;
