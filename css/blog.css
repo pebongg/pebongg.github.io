@@ -1,3 +1,23 @@
+#overlayBlog { 
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    z-index: 0;
+    background: #1a1a1d;
+    display: grid;
+    position: fixed;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+    #closeBlog {
+        color: #f2f2ff;
+        font-size: 36px;
+        cursor: pointer;
+        justify-self: end;
+        padding: 30px;
+    }
+
 .blogContent {
 height:100%;
 width: 100%;
