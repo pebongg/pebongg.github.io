@@ -30,7 +30,7 @@
     
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/blog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
@@ -61,45 +61,81 @@
             <a class="sideNav" id="sideNav"><i class="fas fa-bars"></i></a>
         </div>
     </div>
-    
+
     <button onclick="topFunction()" id="back-to-top-btn" title="Back to Top"><i class="fas fa-angle-double-up"></i></button>
 
-        <div class="container">
-            <header></header>
-            <div class="cover">
-                <div class="headerContact wow fadeIn">
-                    <h1>Contact Us</h1>
-                    <h3>Get in touch</h3>
+    <div class="container">
+        <header></header>
+        <div class="blogContent">
+            <div class="blogHead wow fadeIn">
+                <h1>Blog</h1>
+                <h3>Information about contents and articles</h3>
+            </div>
+            <hr>
+            <div class="blogBody">
+                <div class="blogBodyContent thingsBoard wow fadeInLeft">
+                    <h3>August 2019</h3>
+                    <div>
+                        <h2>Water Quality Sensor ESP32 On Thingsboard</h2>
+                        <h4>Dwi Kurnia Putra</h4>
+                        <a class="blogRead" href="#">Read More</a>
+                    </div>
+                    <ul>
+                        <a>Microcontroller</a>
+                        <a>Application</a>
+                    </ul>
                 </div>
                 <hr>
-                <div class="bodyContact">
-                    <div class="formContact">
-                        <form id="formMessage" target="_blank" action="https://formsubmit.co/dwikrnputra22@gmail.com" method="POST">
-                            <div class="wow fadeInLeft">
-                                <input type="hidden" name="_subject" value="New Email">
-                                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                            </div>
-                            <div class="wow fadeInRight">
-                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                            </div>
-                            <div class="wow fadeInLeft">
-                                <input type="hidden" name="_next" value="https://pebongg.github.io/page/thanks.html">
-                                <textarea placeholder="Message" class="form-message" name="message" rows="10" required></textarea>
-                                <input type="hidden" name="_captcha" value="false">
-                            </div>
-                            <div class="wow fadeInRight">
-                                <button onclick="submitForm()" type="submit" class="btncontactus">Send</button>
-                            </div>
-                        </form>
+                <div class="blogBodyContent heightPro wow fadeInRight">
+                    <h3>November 2016</h3>
+                    <div>
+                        <h2>Prototype Height Measuring Based Microcontroller</h2>
+                        <h4>Dwi Kurnia Putra</h4>
+                        <a class="blogRead" href="#">Read More</a>
                     </div>
+                    <ul>
+                        <a>Microcontroller</a>
+                    </ul>
                 </div>
-                <div class="mobileContact">
-                    <a title="Send Message on Whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=6282269012819">
-                        <i class="fab fa-whatsapp"></i><p>Whatsapp</p></a>
-                    <a title="Call to Number" href="tel:6282269012819"><i class="fas fa-phone-alt"></i><p>6282269012819</p></a>
+                <hr>
+                <div class="blogBodyContent votingServer wow fadeInLeft">
+                    <h3>November 2016</h3>
+                    <div>
+                        <h2>Simple Voting Application Based on Client-Server</h2>
+                        <h4>Dwi Kurnia Putra</h4>
+                        <a class="blogRead" href="#">Read More</a>
+                    </div>
+                    <ul>
+                        <a>Application</a>
+                    </ul>
+                </div>
+                <hr>
+                <div class="blogBodyContent smartTrash wow fadeInRight">
+                    <h3>May 2016</h3>
+                    <div>
+                        <h2>Smart Trash Box Based ATMega 8535</h2>
+                        <h4>Dwi Kurnia Putra</h4>
+                        <a class="blogRead" href="#">Read More</a>
+                    </div>
+                    <ul>
+                        <a>Microcontroller</a>
+                    </ul>
+                </div>
+                <hr>
+                <div class="blogBodyContent englishLearn wow fadeInLeft">
+                    <h3>May 2016</h3>
+                    <div>
+                        <h2>English Learning For Junior High School Children</h2>
+                        <h4>Dwi Kurnia Putra</h4>
+                        <a class="blogRead" href="#">Read More</a>
+                    </div>
+                    <ul>
+                        <a>Application</a>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
 
     <div class="backgroundView2">
         <div class="container">
@@ -131,12 +167,9 @@
                                 class="fab fa-linkedin-in"></i></a>
                         <a target="_blank" href="https://www.instagram.com/dwikrnputra/"><i
                                 class="fab fa-instagram"></i></a>
-                        <a target="_blank" href="https://www.facebook.com/pebongg"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a target="_blank" href="https://github.com/pebongg"><i
-                                class="fab fa-github"></i></a>
-                        <a target="_blank" href="https://pebongg.wordpress.com/"><i
-                                class="fab fa-wordpress-simple"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/pebongg"><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://github.com/pebongg"><i class="fab fa-github"></i></a>
+                        <a target="_blank" href="https://pebongg.wordpress.com/"><i class="fab fa-wordpress-simple"></i></a>
                     </ul>
                 </div>
                 <div class="footerBottom">
@@ -148,12 +181,12 @@
         </div>
     </div>
 
+
+
     <script src="../js/global.js"></script>
     <script src="../js/wow.min.js"></script>
-    <script src="../js/googleMap.js"></script>
     <script>
         new WOW().init();
-
     </script>
 </body>
 </html>
