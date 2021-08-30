@@ -39,6 +39,12 @@
 </head>
 <body>
 
+    <div id="overlayBlog">
+        <a id="closeBlog"><i class="fas fa-times"></i></a>
+        <div id="overlayBlogContent">
+        </div>
+    </div>
+
     <div class="navContent" id="navContent">
         <a class="closeNav" id="closeNav"><i class="fas fa-times"></i></a>
         <ul>
@@ -78,7 +84,7 @@
                     <div>
                         <h2>Water Quality Sensor ESP32 On Thingsboard</h2>
                         <h4>Dwi Kurnia Putra</h4>
-                        <a class="blogRead" href="#">Read More</a>
+                        <a id="readThingsboard" class="blogRead">Read More</a>
                     </div>
                     <ul>
                         <a>Microcontroller</a>
@@ -91,7 +97,7 @@
                     <div>
                         <h2>Prototype Height Measuring Based Microcontroller</h2>
                         <h4>Dwi Kurnia Putra</h4>
-                        <a class="blogRead" href="#">Read More</a>
+                        <a id="readHeight" class="blogRead">Read More</a>
                     </div>
                     <ul>
                         <a>Microcontroller</a>
@@ -103,7 +109,7 @@
                     <div>
                         <h2>Simple Voting Application Based on Client-Server</h2>
                         <h4>Dwi Kurnia Putra</h4>
-                        <a class="blogRead" href="#">Read More</a>
+                        <a id="readVoting" class="blogRead">Read More</a>
                     </div>
                     <ul>
                         <a>Application</a>
@@ -115,7 +121,7 @@
                     <div>
                         <h2>Smart Trash Box Based ATMega 8535</h2>
                         <h4>Dwi Kurnia Putra</h4>
-                        <a class="blogRead" href="#">Read More</a>
+                        <a id="readTrash" class="blogRead">Read More</a>
                     </div>
                     <ul>
                         <a>Microcontroller</a>
@@ -127,7 +133,7 @@
                     <div>
                         <h2>English Learning For Junior High School Children</h2>
                         <h4>Dwi Kurnia Putra</h4>
-                        <a class="blogRead" href="#">Read More</a>
+                        <a id="readEnglish" class="blogRead">Read More</a>
                     </div>
                     <ul>
                         <a>Application</a>
@@ -185,6 +191,7 @@
 
     <script src="../js/global.js"></script>
     <script src="../js/wow.min.js"></script>
+    <script src="../js/blog.js"></script>
     <script>
         new WOW().init();
     </script>
