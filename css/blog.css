@@ -3,11 +3,18 @@
     opacity: 0;
     height: 100%;
     z-index: 0;
-    background: #1a1a1d;
-    display: grid;
+    background: rgb(26, 26, 29, 0.995);
     position: fixed;
-    overflow: hidden;
+    overflow-y: scroll;
     transition: 0.5s;
+}
+
+.blogContainer {
+    display: grid;
+    max-width: 1366px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
 }
 
     #closeBlog {
@@ -15,8 +22,68 @@
         font-size: 36px;
         cursor: pointer;
         justify-self: end;
-        padding: 30px;
+        transition: 0.3s;
     }
+
+    #closeBlog:hover {
+        color: #454559;
+    }
+
+    #overlayBlogContent {
+        width: 100%;
+        display: grid;
+    }
+
+        .blogContentHead {
+            display: grid;
+        }
+        
+            .blogContentHead .headTags {
+            }
+
+                .headTags a {
+                    color: #454559;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-right: 10px;
+                }
+            
+            .blogContentHead h1 {
+                color: #f2f2ff;
+                font-size: 48px;
+                font-weight: bold;
+                text-align: left;
+            }
+
+            .headInfo a {
+                background: #c3073f;
+                border-radius: 10px;
+                color: #f2f2ff;
+                font-size: 24px;
+                font-weight: 400;
+                padding: 5px 15px;
+                margin-right: 20px;
+            }
+
+        .thingsboardBody {
+            display: grid;
+        }
+
+        .heightBody {
+            display: grid;
+        }
+
+        .votingBody {
+            display: grid;
+        }
+
+        .trashBody {
+            display: grid;
+        }
+
+        .englishBody {
+            display: grid;
+        }
 
 .blogContent {
 height:100%;
