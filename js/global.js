@@ -82,9 +82,9 @@ myButton.addEventListener('click', topFunction);
     
 function submitForm() {
     var frm = document.getElementById('formMessage');
-    frm.submit();
-    frm.reset();
-    return false;
+        frm.submit();
+        frm.reset();
+        return false;
 }
     
 function autoClose() {
