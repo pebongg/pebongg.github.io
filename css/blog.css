@@ -138,7 +138,7 @@
                     }
 
                         .deviceTb1 {
-                            content: url("../img/add-device\ 1.png");
+                            content: url("../img/add-device1.png");
                             height: 657px;
                             border-radius: 20px;
                             box-shadow: 4px 4px 0 #454559;
@@ -147,7 +147,7 @@
                         }
 
                         .deviceTb2 {
-                            content: url("../img/device-token\ 1.png");
+                            content: url("../img/device-token1.png");
                             height: 427px;
                             border-radius: 20px;
                             box-shadow: 4px 4px 0 #454559;
@@ -170,7 +170,7 @@
                 }
 
                 .tbContent2 .tb2Img1 {
-                    content: url("../img/prefrence\ 1.png");
+                    content: url("../img/prefrence1.png");
                     border-radius: 20px;
                     box-shadow: 4px 4px 0 #454559;
                     margin: 30px 0;
@@ -178,7 +178,7 @@
                 }
 
                 .tbContent2 .tb2Img2 {
-                    content: url("../img/esp32\ 1.png");
+                    content: url("../img/esp321.png");
                     border-radius: 20px;
                     box-shadow: 4px 4px 0 #454559;
                     margin: 30px 0;
@@ -192,7 +192,7 @@
                 }
 
                     .lib1 {
-                        content: url("../img/thingsboard\ 1.png");
+                        content: url("../img/thingsboard1.png");
                         margin-right: 20px;
                         margin-top: 20px;
                         border-radius: 20px;
@@ -200,7 +200,7 @@
                     }
 
                     .lib2 {
-                        content: url("../img/pubsub\ 1.png");
+                        content: url("../img/pubsub1.png");
                         margin-right: 20px;
                         margin-top: 20px;
                         border-radius: 20px;
@@ -208,7 +208,7 @@
                     }
 
                     .lib3 {
-                        content: url("../img/arduinohttpclient\ 1.png");
+                        content: url("../img/arduinohttpclient1.png");
                         margin-right: 20px;
                         margin-top: 20px;
                         border-radius: 20px;
@@ -216,7 +216,7 @@
                     }
 
                     .lib4 {
-                        content: url("../img/arduinojson\ 1.png");
+                        content: url("../img/arduinojson1.png");
                         margin-right: 20px;
                         margin-top: 20px;
                         border-radius: 20px;
@@ -243,7 +243,7 @@
                 }
 
                     .displayTb1 {
-                        content: url("../img/telemetry\ 1.png");
+                        content: url("../img/telemetry1.png");
                         margin-right: 20px;
                         margin-bottom: 20px;
                         border-radius: 20px;
@@ -251,7 +251,7 @@
                     }
 
                     .displayTb2 {
-                        content: url("../img/dashboard\ 1.png");
+                        content: url("../img/dashboard1.png");
                         margin-right: 20px;
                         margin-bottom: 20px;
                         border-radius: 20px;
@@ -278,23 +278,24 @@
             }
 
             .heightBody .demoHeight {
-                content: url("../img/img_3059\ 2.png");
+                content: url("../img/img_30592.png");
                 width: 100%;
-                margin: 20px 0;
+                margin-top: 20px;
+                margin-bottom: 40px;
                 border-radius: 20px;
                 box-shadow: 6px 6px 0 #454559;
             }
 
             .heightBody .smHeight {
                 width: 100%;
-                content: url("../img/img_9242\ 1.png");
-                margin: 20px 0;
+                content: url("../img/img_92421.png");
+                margin: 40px 0;
                 border-radius: 20px;
                 box-shadow: 6px 6px 0 #454559;                
             }
 
             .heightBody .dwnHeight {
-                margin: 20px 0;
+                margin: 40px 0;
             }
 
         .votingBody {
