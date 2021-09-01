@@ -240,10 +240,28 @@ readEnglish.addEventListener('click', () => {
                 <a>Dwi Kurnia Putra</a>
             </div>
         </div>
-        <div class = "HeightBody">
-            <div>
+        <div class = "heightBody">
+            <div class = "wpHeight">
+                <p>Wordpress URL :</p>
+                <a target = "blank" href = "https://pebongg.wordpress.com/2016/11/25/prototipe-pengukur-tinggi-badan-berbasis-mikrokontroller-menggunakan-komunikasi-serial/">
+                https://pebongg.wordpress.com/2016/11/25/prototipe..</a>
             </div>
-            <div>
+            <img class = "demoHeight">
+            <p>To measure human height is generally done manually. Measurement is important in the world of science. 
+            Currently, the results of scale readings on manual height measuring instruments carried out by humans have a 
+            low level of accuracy and accuracy so that human errors often occur. So it takes a height measuring device that 
+            can work automatically, carry out the measurement process, read the measurement results, as well as notify the measurement 
+            results with the display output on the ATMega16 Microcontroller-based LCD. For measuring height, a proximity sensor or 
+            ultrasonic sensor is used with a height measuring limit of 100 cm. The height measurement device uses 2 ATMega16 microcontrollers 
+            which are connected to each other using serial communication.</p>
+            <img class = "smHeight">
+            <p>So here I will share with you the documents and all the project files of this height measurement prototype, complete, 
+            just download and edit if you want.</p>
+            <div class = "dwnHeight">
+                <p>Document : <a target = "blank" href = "https://drive.google.com/file/d/0B43f1GIQUaKZTmNTLWxETVBzWTA/view?resourcekey=0-Hd45QoSv8qSbZlm7DF9emA">
+                https://drive.google.com/file/d/...</a></p>
+                <p>Code and Design : <a target = "blank" href = "https://www.mediafire.com/file/w70xy5yidufb5ex/Code+%26+Desain+Sismin.rar" >
+                https://www.mediafire.com/file/w70xy5...</a></p>
             </div>
         </div>
         `
