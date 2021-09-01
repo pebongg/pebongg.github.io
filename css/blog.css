@@ -260,7 +260,42 @@
 
         .heightBody {
             display: grid;
+            margin: 20px 0;
         }
+
+            .heightBody p{
+                color: #f2f2ff;
+                font-size: 32px;
+            }
+
+            .heightBody a {
+                color: #f2f2ff;
+                font-size: 32px;
+            }
+
+            .wpHeight p, .wpHeight a {
+                font-size: 24px;
+            }
+
+            .heightBody .demoHeight {
+                content: url("../img/img_3059\ 2.png");
+                width: 100%;
+                margin: 20px 0;
+                border-radius: 20px;
+                box-shadow: 6px 6px 0 #454559;
+            }
+
+            .heightBody .smHeight {
+                width: 100%;
+                content: url("../img/img_9242\ 1.png");
+                margin: 20px 0;
+                border-radius: 20px;
+                box-shadow: 6px 6px 0 #454559;                
+            }
+
+            .heightBody .dwnHeight {
+                margin: 20px 0;
+            }
 
         .votingBody {
             display: grid;
