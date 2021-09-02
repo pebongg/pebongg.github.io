@@ -1,4 +1,5 @@
 let overlayBlog = document.getElementById('overlayBlog');
+let topBlogButton = document.getElementById('to-top-blog');
 let blogContainer = document.getElementById('blogContainer');
 let readThingsboard = document.getElementById('readThingsboard');
 let readHeight = document.getElementById('readHeight');
@@ -6,6 +7,24 @@ let readVoting = document.getElementById('readVoting');
 let readTrash = document.getElementById('readTrash');
 let readEnglish = document.getElementById('readEnglish');
 let closeBlog = document.getElementById('closeBlog');
+
+overlayBlog.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (overlayBlog.scrollTop > 20) {
+        topBlogButton.style.opacity = "1";
+        topBlogButton.style.right = "20px";
+    } else {
+        topBlogButton.style.opacity = "0";
+        topBlogButton.style.right = "-50vw";
+    }
+}
+
+topBlogButton.addEventListener('click', toTopBlog);
+
+    function toTopBlog() {
+        overlayBlog.scrollTop = "0";
+    }
 
 readThingsboard.addEventListener('click', () => {
     openBlogContent();
@@ -241,7 +260,7 @@ readEnglish.addEventListener('click', () => {
             </div>
         </div>
         <div class = "heightBody">
-            <div class = "wpHeight">
+            <div class = "wpBlog">
                 <p>Wordpress URL :</p>
                 <a target = "blank" href = "https://pebongg.wordpress.com/2016/11/25/prototipe-pengukur-tinggi-badan-berbasis-mikrokontroller-menggunakan-komunikasi-serial/">
                 https://pebongg.wordpress.com/2016/11/25/prototipe..</a>
@@ -284,10 +303,43 @@ readEnglish.addEventListener('click', () => {
                 <a>Dwi Kurnia Putra</a>
             </div>
         </div>
-        <div class = "VotingBody">
-            <div>
+        <div class = "votingBody">
+            <div class = "wpBlog">
+                <p>Wordpress URL :</p>
+                <a target = "blank" href = "https://pebongg.wordpress.com/2016/11/20/aplikasi-voting-pemilihan-umum-sederhana-berbasis-client-server/">
+                https://pebongg.wordpress.com/2016/11/20/aplikasi-voting...</a>
             </div>
-            <div>
+            <div class = "textVoting">
+                <p>This software is made using the Java platform, namely using the Netbeans IDE. Here's what the interface looks like:</p>
+                <b>Intreface Server</b>
+            </div>
+            <img class = "votingServer">
+            <div class = "textVoting">
+                <p>In the interface for the server there is a start button to start the voting system from the client and 3 labels to display the voting results.</p>
+                <b>Interface Client</b>
+            </div>
+            <img class = "votingClient">
+            <div class = "textVoting">
+                <p>In the interface for the client there are 3 buttons to vote and there is a label as a description.</p>
+                <b>Voting System Scheme</b>
+            </div>
+            <img class = "votingScheme">
+            <div class = "textVoting">
+                <p>The server starts to give the client access to vote. The client makes a vote, where there are 3 voting options and after voting, on the client side a 
+                statement will appear "Thank you for voting" and the client can only vote 1x, if the client tries to vote again, the statement "Sorry" will appear You've 
+                already voted." And also the client cannot vote if it has not been given access by the server, if the client tries to vote it will display the statement 
+                "Voting is invalid". While on the server side, if the client has voted, the number of voting results will appear depending on the number of clients who voted.</p>
+                <p>Here's the link to download the client-server voting :</p>
+                <a target = "blank" href = "http://www.mediafire.com/file/i27sbixx3lsbgx3/skvote.rar/file">Download File</a>
+                <div class = "listVoting">Notes :
+                    <li>Extract the skvote File</li>
+                    <li>Open the Netbeans IDE Program</li>
+                    <li>Open Project</li>
+                    <li>Select skvoteclient & skvoteserver</li>
+                    <li>Second Running Project</li>
+                    <li>Finished</li>
+                </div>
+                <p>Hopefully useful, success always</p>
             </div>
         </div>
         `
@@ -310,11 +362,229 @@ readEnglish.addEventListener('click', () => {
                 <a>Dwi Kurnia Putra</a>
             </div>
         </div>
-        <div class = "TrashBody">
-            <div>
+        <div class = "trashBody">
+            <div class = "wpBlog">
+                <p>Wordpress URL :</p>
+                <a target = "blank" href = "https://pebongg.wordpress.com/2016/05/01/kotak-sampah-pintar-berbasis-atmega-8535/">
+                https://pebongg.wordpress.com/2016/05/01/kotak-sampah...</a>
             </div>
-            <div>
+            <iframe src="https://www.youtube.com/embed/h4Yy1WR13kg" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img>
+            <div class = "textTrash">
+                <p>This automatic garbage box uses a minimum system series MA-8535 made by Ceative Vision, Ping Sensor HC-SR04 as input and Servo Motor as output</p>
+                <p>Berikut Source Codenya :</p>
             </div>
+            <div class = "textCode">
+                /*****************************************************<br>
+                This program was produced by the<br>
+                CodeWizardAVR V2.05.0 Professional<br>
+                Automatic Program Generator<br>
+                © Copyright 1998-2010 Pavel Haiduc, HP InfoTech s.r.l.<br>
+                http://www.hpinfotech.com<br>
+                <br>
+                Project :<br>
+                Version :<br>
+                Date : 27-Apr-2016<br>
+                Author :<br>
+                Company :<br>
+                Comments:<br>
+                Chip type : ATmega8535<br>
+                Program type : Application<br>
+                AVR Core Clock frequency: 8.000000 MHz<br>
+                Memory model : Small<br>
+                External RAM size : 0<br>
+                Data Stack size : 128<br>
+                *****************************************************/<br>
+                <br>
+                #include <mega8535.h><br>
+                #include <delay.h><br>
+                unsigned int i = 0;<br>
+                unsigned int i;<br>
+                unsigned int jarak,waktu;<br>
+                unsigned char data;<br>
+                #define servo PORTD.0<br>
+                #define echo PINB.0<br>
+                #define trigger PORTC.0<br>
+                <br>
+                // Timer 0 overflow interrupt service routine<br>
+                interrupt [TIM0_OVF] void timer0_ovf_isr(void)<br>
+                {<br>
+                // Place your code here<br>
+                if(i>624)<br>
+                {<br>
+                i=0;<br>
+                }<br>
+                else<br>
+                {<br>
+                i++;<br>
+                }<br>
+                if(i<data)<br>
+                {<br>
+                servo=1;<br>
+                }<br>
+                else<br>
+                {<br>
+                servo=0;<br>
+                }<br>
+                }<br>
+                <br>
+                // Declare your global variables here<br>
+                void sensor()<br>
+                {<br>
+                <br>
+                waktu = 0;<br>
+                <br>
+                trigger = 1;<br>
+                delay_us(10);<br>
+                trigger = 1 ;<br>
+                delay_us(10);<br>
+                trigger = 0;<br>
+                while (echo == 0){};<br>
+                while (echo == 1)<br>
+                    <br>
+                {<br>
+                waktu++;<br>
+                }<br>
+                <br>
+                jarak = ((waktu/58)*1);<br>
+                }<br>
+                void main(void)<br>
+                {<br>
+                // Declare your local variables here<br>
+                    <br>
+                // Input/Output Ports initialization<br>
+                // Port A initialization<br>
+                // Func7=In Func6=In Func5=In Func4=In Func3=In Func2=In Func1=In Func0=In<br>
+                // State7=T State6=T State5=T State4=T State3=T State2=T State1=T State0=T<br>
+                PORTA=0x00;<br>
+                DDRA=0x00;<br>
+                    <br>
+                // Port B initialization<br>
+                // Func7=In Func6=In Func5=In Func4=In Func3=In Func2=In Func1=In Func0=In<br>
+                // State7=T State6=T State5=T State4=T State3=T State2=T State1=T State0=T<br>
+                PORTB=0x00;<br>
+                DDRB=0x00;<br>
+                    <br>
+                // Port C initialization<br>
+                // Func7=Out Func6=Out Func5=Out Func4=Out Func3=Out Func2=Out Func1=Out Func0=Out<br>
+                // State7=0 State6=0 State5=0 State4=0 State3=0 State2=0 State1=0 State0=0<br>
+                PORTC=0x00;<br>
+                DDRC=0xFF;<br>
+                    <br>
+                // Port D initialization<br>
+                // Func7=In Func6=In Func5=In Func4=In Func3=In Func2=In Func1=In Func0=In<br>
+                // State7=T State6=T State5=T State4=T State3=T State2=T State1=T State0=T<br>
+                PORTD=0x00;<br>
+                DDRD=0xFF;<br>
+                    <br>
+                // Timer/Counter 0 initialization<br>
+                // Clock source: System Clock<br>
+                // Clock value: 8000.000 kHz<br>
+                // Mode: Normal top=0xFF<br>
+                // OC0 output: Disconnected<br>
+                TCCR0=0x01;<br>
+                TCNT0=0x00;<br>
+                OCR0=0x00;<br>
+                    <br>
+                // Timer/Counter 1 initialization<br>
+                // Clock source: System Clock<br>
+                // Clock value: Timer1 Stopped<br>
+                // Mode: Normal top=0xFFFF<br>
+                // OC1A output: Discon.<br>
+                // OC1B output: Discon.<br>
+                // Noise Canceler: Off<br>
+                // Input Capture on Falling Edge<br>
+                // Timer1 Overflow Interrupt: Off<br>
+                // Input Capture Interrupt: Off<br>
+                // Compare A Match Interrupt: Off<br>
+                // Compare B Match Interrupt: Off<br>
+                TCCR1A=0x00;<br>
+                TCCR1B=0x00;<br>
+                TCNT1H=0x00;<br>
+                TCNT1L=0x00;<br>
+                ICR1H=0x00;<br>
+                ICR1L=0x00;<br>
+                OCR1AH=0x00;<br>
+                OCR1AL=0x00;<br>
+                OCR1BH=0x00;<br>
+                OCR1BL=0x00;<br>
+                    <br>
+                // Timer/Counter 2 initialization<br>
+                // Clock source: System Clock<br>
+                // Clock value: Timer2 Stopped<br>
+                // Mode: Normal top=0xFF<br>
+                // OC2 output: Disconnected<br>
+                ASSR=0x00;<br>
+                TCCR2=0x00;<br>
+                TCNT2=0x00;<br>
+                OCR2=0x00;<br>
+                    <br>
+                // External Interrupt(s) initialization<br>
+                // INT0: Off<br>
+                // INT1: Off<br>
+                // INT2: Off<br>
+                MCUCR=0x00;<br>
+                MCUCSR=0x00;<br>
+                    <br>
+                // Timer(s)/Counter(s) Interrupt(s) initialization<br>
+                TIMSK=0x01;<br>
+                    <br>
+                // USART initialization<br>
+                // USART disabled<br>
+                UCSRB=0x00;<br>
+                    <br>
+                // Analog Comparator initialization<br>
+                // Analog Comparator: Off<br>
+                // Analog Comparator Input Capture by Timer/Counter 1: Off<br>
+                ACSR=0x80;<br>
+                SFIOR=0x00;<br>
+                    <br>
+                // ADC initialization<br>
+                // ADC disabled<br>
+                ADCSRA=0x00;<br>
+                    <br>
+                // SPI initialization<br>
+                // SPI disabled<br>
+                SPCR=0x00;<br>
+                    <br>
+                // TWI initialization<br>
+                // TWI disabled<br>
+                TWCR=0x00;<br>
+                    <br>
+                // Global enable interrupts<br>
+                #asm(“sei”)<br>
+                    <br>
+                while (1)<br>
+                {<br>
+                // Place your code here<br>
+                /*<br>
+                data=28;<br>
+                delay_ms(1000);<br>
+                    <br>
+                data=90;<br>
+                delay_ms(1000);<br>
+                */<br>
+                sensor();<br>
+                    <br>
+                if (jarak < 20)<br>
+                {<br>
+                data=28;<br>
+                delay_ms(1000);<br>
+                }<br>
+                else<br>
+                {<br>
+                data=90;<br>
+                delay_ms(1000);<br>
+                }<br>
+                }<br>
+                }<br>
+            </div>
+            <div class = "textTrash">
+                <p>Notes : </p>
+                <p>Ports C and D are set as output, and the timer uses 8000khz</p>
+                <p>Okay, that's my post this time, hopefully it can be useful for all of you. Don't forget to like the video ;)</p>
+            // </div>
         </div>
         `
         ;
@@ -336,10 +606,23 @@ readEnglish.addEventListener('click', () => {
                 <a>Dwi Kurnia Putra</a>
             </div>
         </div>
-        <div class = "EnglishBody">
-            <div>
+        <div class = "englishBody">
+            <div class = "wpBlog">
+                <p>Wordpress URL :</p>
+                <a target = "blank" href = "https://pebongg.wordpress.com/2016/05/06/media-pembelajaran-bahasa-inggris-untuk-smp/">
+                https://pebongg.wordpress.com/2016/05/06/media-pembelajaran...</a>
             </div>
-            <div>
+            <div class = "textEnglish">
+                <p>This application was made using Macromedia Flash 8 software. Just for fun, I share my work with all of my friends. 
+                Here's what the application looks like as well as the flash file and flash document :</p>
+            </div>
+            <img class = "english1">
+            <img class = "english2">
+            <img class = "english3">
+            <img class = "english4">
+            <img class = "english5">
+            <div class = "dwnEnglish">
+                <a target = "blank" href = "https://drive.google.com/file/d/0B43f1GIQUaKZZGdYUGxoWW9ma0k/view?resourcekey=0-OTqme0sRnjnm4hFMb87BUA">Download File</a>
             </div>
         </div>
         `
