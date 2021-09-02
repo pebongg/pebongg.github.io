@@ -9,6 +9,27 @@
     transition: 0.5s;
 }
 
+    #to-top-blog {
+        opacity: 0;
+        position: fixed;
+        bottom: 20px;
+        right: -20vw;
+        z-index: 10000;
+        font-size: 26px;
+        width: 50px;
+        height: 50px;
+        color: #e3e2f2;
+        text-shadow: 3px 3px 0 #b20a3a;
+        background-color: #c3073f;
+        border: none;
+        cursor: pointer;
+        transition: all 0.7s;  
+    }
+
+    #to-top-blog:hover {
+        background: #b20a3a;
+    }
+
 .blogContainer {
     display: grid;
     max-width: 1366px;
@@ -86,7 +107,7 @@
                     width: 100%;
                     height: 700px;
                     border-radius: 20px;
-                    box-shadow: 4px 4px 0 #454559;
+                    
                     margin-top: 10px;
                     margin-bottom: 40px;
                 }
@@ -95,7 +116,7 @@
                     content: url("../img/thingsboardrancang.png");
                     width: 100%;
                     border-radius: 20px;
-                    box-shadow: 4px 4px 0 #454559;
+                    
                     margin-top: 10px;
                 }
 
@@ -141,7 +162,7 @@
                             content: url("../img/add-device1.png");
                             height: 657px;
                             border-radius: 20px;
-                            box-shadow: 4px 4px 0 #454559;
+                            
                             margin-right: 30px;
                             margin-bottom: 30px;
                         }
@@ -150,7 +171,7 @@
                             content: url("../img/device-token1.png");
                             height: 427px;
                             border-radius: 20px;
-                            box-shadow: 4px 4px 0 #454559;
+                            
                             margin-right: 30px;
                         }
 
@@ -172,7 +193,7 @@
                 .tbContent2 .tb2Img1 {
                     content: url("../img/prefrence1.png");
                     border-radius: 20px;
-                    box-shadow: 4px 4px 0 #454559;
+                    
                     margin: 30px 0;
                     width: 70%;
                 }
@@ -180,7 +201,7 @@
                 .tbContent2 .tb2Img2 {
                     content: url("../img/esp321.png");
                     border-radius: 20px;
-                    box-shadow: 4px 4px 0 #454559;
+                    
                     margin: 30px 0;
                     width: 70%;
                 }
@@ -196,7 +217,7 @@
                         margin-right: 20px;
                         margin-top: 20px;
                         border-radius: 20px;
-                        box-shadow: 4px 4px 0 #454559;
+                        
                     }
 
                     .lib2 {
@@ -204,7 +225,7 @@
                         margin-right: 20px;
                         margin-top: 20px;
                         border-radius: 20px;
-                        box-shadow: 4px 4px 0 #454559;
+                        
                     }
 
                     .lib3 {
@@ -212,7 +233,7 @@
                         margin-right: 20px;
                         margin-top: 20px;
                         border-radius: 20px;
-                        box-shadow: 4px 4px 0 #454559;
+                        
                     }
 
                     .lib4 {
@@ -220,7 +241,7 @@
                         margin-right: 20px;
                         margin-top: 20px;
                         border-radius: 20px;
-                        box-shadow: 4px 4px 0 #454559;
+                        
                     }
                     
 
@@ -247,7 +268,7 @@
                         margin-right: 20px;
                         margin-bottom: 20px;
                         border-radius: 20px;
-                        box-shadow: 4px 4px 0 #454559;                        
+                                                
                     }
 
                     .displayTb2 {
@@ -255,7 +276,7 @@
                         margin-right: 20px;
                         margin-bottom: 20px;
                         border-radius: 20px;
-                        box-shadow: 4px 4px 0 #454559;
+                        
                     }
 
         .heightBody {
@@ -273,7 +294,7 @@
                 font-size: 32px;
             }
 
-            .wpHeight p, .wpHeight a {
+            .wpBlog p, .wpBlog a {
                 font-size: 24px;
             }
 
@@ -283,7 +304,7 @@
                 margin-top: 20px;
                 margin-bottom: 40px;
                 border-radius: 20px;
-                box-shadow: 6px 6px 0 #454559;
+                
             }
 
             .heightBody .smHeight {
@@ -291,7 +312,7 @@
                 content: url("../img/img_92421.png");
                 margin: 40px 0;
                 border-radius: 20px;
-                box-shadow: 6px 6px 0 #454559;                
+                                
             }
 
             .heightBody .dwnHeight {
@@ -300,15 +321,135 @@
 
         .votingBody {
             display: grid;
+            margin: 20px 0;
         }
+
+            .votingBody p, .votingBody a, .votingBody b, .votingBody li {
+                color: #f2f2ff;
+            }
+
+            .votingBody .textVoting p, .textVoting b, .textVoting a{
+                font-size: 32px;
+                margin: 20px 0;
+            }
+
+            .votingBody img {
+                margin: 20px 0;
+                border-radius: 20px;
+            }
+
+            .votingBody .votingServer {
+                content: url("../img/interface-server.png");
+            }
+
+            .votingBody .votingClient {
+                content: url("../img/interface-client.png");
+            }
+            
+            .votingBody .votingScheme {
+                content: url("../img/skema-voting.png");
+            }            
+
+            .listVoting {
+                color: #f2f2ff;
+                font-size: 32px;
+                margin: 20px 0;
+            }
 
         .trashBody {
             display: grid;
+            margin: 20px 0;
         }
+
+            .trashBody p, .trashBody a {
+                color: #f2f2ff;
+            }
+
+            .trashBody .textTrash p {
+                font-size: 32px;
+                margin: 20px 0;
+            }
+
+            .trashBody iframe {
+                width: 100%;
+                height: 700px;
+                border-radius: 20px;
+                margin: 20px 0;
+            }
+
+            .trashBody img {
+                content: url("../img/trashIMG.png");
+                width: 100%;
+                border-radius: 20px;
+                margin: 20px 0;
+            }
+
+            .trashBody .textCode {
+                font-size: 32px;
+                color: #f2f2ff;
+                background: rgba(227, 226, 242, 0.14);
+                padding: 10px 15px;
+                margin: 20px 0;
+                width: 100%;
+                height: 400px;
+                overflow-y: scroll;
+                font-family: 'Roboto Mono', monospace;
+            }
 
         .englishBody {
             display: grid;
+            margin: 20px 0;
         }
+
+            .englishBody p, .englishBody a {
+                color: #f2f2ff;
+            }
+
+            .englishBody img {
+                margin: 20px 0;
+                border-radius: 20px;
+            }
+
+            .englishBody .english1 {
+                content: url("../img/english1.png");
+                width: 100%;
+            }
+
+            .englishBody .english2 {
+                content: url("../img/english2.png");
+                width: 100%;
+            }
+            
+            .englishBody .english3 {
+                content: url("../img/english3.png");
+                width: 100%;
+            }
+            
+            .englishBody .english4 {
+                content: url("../img/english4.png");
+                width: 100%;
+            }
+            
+            .englishBody .english5 {
+                content: url("../img/english5.png");
+                width: 100%;
+            }
+            
+            .textEnglish {
+                margin: 20px 0;
+            }
+
+            .textEnglish p {
+                font-size: 32px;
+            }
+
+            .dwnEnglish {
+                margin: 20px 0;
+            }
+
+            .dwnEnglish a {
+                font-size: 32px;
+            }
 
 .blogContent {
 height:100%;
