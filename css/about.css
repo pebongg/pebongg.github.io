@@ -33,6 +33,7 @@ align-content: space-between;
         }
 
     .bodyAbout {
+        width: 90%;
         padding: 20px 0px;
         display: flex;
         align-items: center;
@@ -48,7 +49,7 @@ align-content: space-between;
             background: #e3e2f2;
             padding: 30px;
             transition: all 0.4s;
-            margin: 20px;
+            margin: 20px auto;
             border-radius: 20px;
             box-shadow: 4px 4px 0px #d6d5e2;
         }
@@ -79,9 +80,9 @@ align-content: space-between;
 
         .percentBar {
             display: flex;
-            width: 60%;
+            width: 70%;
             height: 10px;
-            margin: 0px auto;
+            margin: 20px auto;
         }
 
             #htmlBar {
@@ -120,7 +121,7 @@ align-content: space-between;
     }
 
         .footerAboutText {
-            width: 75%;
+            width: 90%;
             margin: 0px auto;
         }
 
@@ -135,19 +136,72 @@ align-content: space-between;
             justify-items: center;
             justify-self: center;
             cursor: pointer;
+            transition: all 0.4s;
         }
 
+        .footerAboutGithub:hover {
+            transform: translateY(2%);
+        }
 
         .footerAboutGithub a {
             padding: 25px 0px;
             color: #1a1a1d;
             font-size:24px;
-            font-weight: normal;
+            font-weight: bold;
             text-decoration: none;
         }
 
         .footerAboutGithub a i {
             color: #1a1a1d;
             font-size:24px;
+            font-weight: bold;
         }
+
+    .bodyMe {
+        display: flex;
+        width: 100%;
+        padding: 20px 0px;
+        align-content: center;
+        justify-content: space-around;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .bodyMe img {
+        margin: 20px auto;
+        max-height: 300px;
+        max-width: 300px;
+        filter: drop-shadow(4px 4px 0px #d6d5e2);
+        border-radius: 20px;
+        transition: all 0.4s; 
+    }
+
+    .bodyMe img:hover {
+        transform: translateY(2%);
+    }
+
+        .me1 {
+            content: url('../img/aboutme1.jpg');
+        }
+
+        .me2 {
+            content: url('../img/aboutme2.jpg');
+        }
+
+        .me3 {
+            content: url('../img/aboutme3.jpg');
+        }
+
+    .footMe {
+        padding: 20px 0px;
+        width: 90%;
+        justify-self: center;
+    }
+
+    .footMe p {
+        color: #1a1a1d;
+        font-size: 22px;
+        font-weight: normal;
+        padding-bottom: 20px;
+    }
         

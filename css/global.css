@@ -200,6 +200,14 @@ body{
     position: absolute;
     z-index: 9;
     }
+
+    .backgroundView3 {
+    background: #c3073f;
+    width: 100%;
+    height: max-content;
+    outline: solid 3px rgb(214, 213, 226, 0.4);
+    z-index: 9;
+    }
         
         .container {
         max-width: 1280px;
