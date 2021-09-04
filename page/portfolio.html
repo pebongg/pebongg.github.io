@@ -15,7 +15,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pebongg.github.io/">
-    <meta property="og:title" content="DwiKurniaPutra | Personal Pages">
+    <meta property="og:title" content="DwiKurniaPutra. | Personal Pages">
     <meta property="og:description"
         content="is a static website using the Github Repository, precisely the Github Pages environment that uses HTML, CSS and Javascript language technologies without using frameworks. This personal page contain information about me such as resume, portfolio, blog and so on.">
     <meta property="og:image" content="https://pebongg.github.io/img/dwikurniaputra1200x628.jpg">
@@ -30,21 +30,24 @@
     
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/portoflio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/35529807d7.js" crossorigin="anonymous"></script>
 </head>
-<body onload="autoClose()">
+<body>
 
     <div class="navContent" id="navContent">
         <a class="closeNav" id="closeNav"><i class="fas fa-times"></i></a>
         <ul>
             <a href="../index.html">Home</a>
             <a href="../page/resume.html">Resume</a>
-            <a href="../page/portfolio.html">Portfolio</a>
+            <a href="#">Portfolio</a>
             <a href="../page/blog.html">Blog</a>
             <a href="../page/about.html">About</a>
             <a href="../page/contact.html">Contact</a>
@@ -63,16 +66,17 @@
     </div>
     
     <button onclick="topFunction()" id="back-to-top-btn" title="Back to Top"><i class="fas fa-angle-double-up"></i></button>
-    
-    <div class="container wow fadeInDown">
+
+    <div class="container">
         <header></header>
-        <div class="cover">
-            <div class="coverLeft wow fadeInDown">
-                <div id="text1">Your message has been sent</div>
-                <div id="text2">Thank you for getting in touch and warm regards</div>
+        <div class="portfolio">
+            <div class="portfolioHead">
+                <h1>Portfolio</h1>
+                <h3>Results of my work, achievements or what I have made</h3>
             </div>
-            <div class="coverRight wow fadeIn">
-                <img id="putra2">
+            <hr>
+            <div class="portfolioBody">
+
             </div>
         </div>
     </div>
@@ -121,8 +125,9 @@
 
     <script src="../js/global.js"></script>
     <script src="../js/wow.min.js"></script>
+    <script src="../js/blog.js"></script>
     <script>
-        new WOW().init();          
+        new WOW().init();
     </script>
 </body>
 </html>
